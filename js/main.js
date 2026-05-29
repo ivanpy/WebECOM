@@ -166,9 +166,11 @@
       if (window.scrollY >= sectionTop) current = section.id;
     });
     navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href || href === "#") return;
       link.classList.toggle(
         "nav__link--active",
-        link.getAttribute("href") === `#${current}`,
+        href === `#${current}`,
       );
     });
   };

@@ -382,22 +382,8 @@
               <!-- /.hero__slides -->
             </div>
 
-            <!-- Img hero wrap-->
-            <div class="hero__visual" aria-hidden="true">
-              <div class="hero__img-wrap hero__img-wrap--video">
-                <video
-                  class="hero__video"
-                  src="./img/Codigo.mp4"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  preload="metadata"
-                  aria-hidden="true"
-                ></video>
-                <div class="hero__video-fade" aria-hidden="true"></div>
-              </div>
-            </div>
+            <!-- Ventanas de código animadas — generadas por JS -->
+            <div class="hero__visual hero__code-stage" aria-hidden="true" id="hero-code-stage"></div>
           </div>
         </div>
       </section>
@@ -576,8 +562,8 @@
       <!-- ============================================================
          SERVICIOS
     ============================================================ -->
-      <section class="section" id="servicios" aria-labelledby="services-title" style="display:flex; align-items:center; justify-content:center;">
-        <h2 class="section__title" id="services-title" style="text-align:center; white-space:nowrap; margin:0;">
+      <section class="section" id="servicios" aria-labelledby="services-title" style="display:flex; align-items:center; justify-content:center; padding-inline: clamp(1rem, 5vw, 3rem);">
+        <h2 class="section__title" id="services-title" style="text-align:center; margin:0;">
           Soluciones, tecnología y comunicación
         </h2>
       </section>
@@ -1573,5 +1559,6 @@
   ============================================================ -->
     <script src="js/hero-canvas.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/hero-code-windows.js"></script>
   </body>
 </html>

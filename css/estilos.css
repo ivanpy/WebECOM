@@ -4480,3 +4480,97 @@ h6 {
     opacity: 0.4;
   }
 }
+
+/* ============================================================
+   HERO CODE STAGE — ventanas de código animadas
+============================================================ */
+
+.hero__code-stage {
+  position: relative;
+  width: 100%;
+  min-height: 420px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.code-win {
+  position: absolute;
+  background: rgba(0, 20, 40, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+  overflow: hidden;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+  will-change: opacity;
+  z-index: 1;
+}
+
+.code-win__bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.code-win__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.code-win__dot--r { background: #ff5f56; }
+.code-win__dot--y { background: #febc2e; }
+.code-win__dot--g { background: #28c840; }
+
+.code-win__label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-left: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.code-win__body {
+  padding: 12px 14px 14px;
+}
+
+.code-win__pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  line-height: 1.65;
+  color: rgba(210, 230, 255, 0.70);
+  white-space: pre;
+  overflow: hidden;
+}
+
+.code-win__code {
+  display: block;
+}
+
+.code-win__cursor {
+  display: inline-block;
+  width: 7px;
+  height: 13px;
+  background: rgba(236, 38, 143, 0.85);
+  vertical-align: text-bottom;
+  margin-left: 1px;
+  animation: cursorBlink 0.9s step-end infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
