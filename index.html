@@ -1,0 +1,1577 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="ECOM — Soluciones tecnológicas innovadoras para empresas que quieren liderar el futuro digital."
+    />
+    <meta
+      name="keywords"
+      content="tecnología, software, innovación, ciberseguridad, cloud, IA, transformación digital"
+    />
+    <meta name="author" content="Ecom Tecnologia y comunicaciones" />
+    <meta property="og:title" content="ECOM CHACO" />
+    <meta
+      property="og:description"
+      content="Soluciones tecnológicas de vanguardia para el mundo empresarial."
+    />
+    <meta property="og:type" content="website" />
+    <title>ECOM — Tecnologia y comunicaciones</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ============================================================
+       NAV
+  ============================================================ -->
+    <header class="nav" id="nav" role="banner">
+      <div class="u-container">
+        <nav class="nav__inner" aria-label="Navegación principal">
+
+          <!-- Logos desktop: se alternan según estado del scroll -->
+          <div class="nav__logo-wrap">
+            <a href="#inicio" class="nav__logo-scroll" aria-label="ECOM — Inicio">
+              <img src="img/blow.png" alt="ECOM" class="nav__logo-scroll__img" />
+            </a>
+            <a href="#inicio" class="nav__logo-initial" aria-label="ECOM — Inicio">
+              <img src="img/ecomsa.png" alt="ECOM" class="nav__logo-initial__img" />
+            </a>
+          </div>
+
+          <!-- Logo: solo visible en móvil, centrado -->
+          <a href="#inicio" class="nav__logo-mobile" aria-label="ECOM — Inicio">
+            <img src="img/blow.png" alt="ECOM" class="nav__logo-mobile__img" />
+          </a>
+
+          <!-- Desktop Menu -->
+          <ul class="nav__menu" role="menubar">
+
+            <li role="none">
+              <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+            </li>
+
+            <!-- Soluciones con desplegable -->
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-soluciones">
+                Soluciones
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-soluciones">
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Telecomunicaciones</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Internet satelital</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="software.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Software</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Datacenter</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Seguridad</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">I+D+i</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+            </li>
+
+            <!-- Accesos con desplegable -->
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-accesos">
+                Accesos
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Proveedores</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Personal de ECOM</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Retirados</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="#precios" class="nav__link" role="menuitem">Subasta</a>
+            </li>
+
+          </ul>
+
+          <!-- Actions: Sumate | (IA) | Contactate -->
+          <div class="nav__actions">
+            <a href="#" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#" class="nav__action-avatar" aria-label="Área personal">
+              <span class="nav__action-avatar-initials">IA</span>
+            </a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button
+            class="nav__toggle"
+            id="nav-toggle"
+            aria-controls="nav-mobile"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav__mobile" id="nav-mobile" aria-hidden="true" role="menu">
+
+        <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+
+        <!-- Soluciones mobile -->
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-soluciones">
+          Soluciones
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-soluciones" aria-hidden="true">
+          <a href="#" class="nav__mobile-submenu-item">Telecomunicaciones</a>
+          <a href="#" class="nav__mobile-submenu-item">Internet satelital</a>
+          <a href="software.html" class="nav__mobile-submenu-item">Software</a>
+          <a href="#" class="nav__mobile-submenu-item">Datacenter</a>
+          <a href="#" class="nav__mobile-submenu-item">Seguridad</a>
+          <a href="#" class="nav__mobile-submenu-item">I+D+i</a>
+        </div>
+
+        <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+
+        <!-- Accesos mobile -->
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-accesos">
+          Accesos
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
+          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="#" class="nav__mobile-submenu-item">Proveedores</a>
+          <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
+          <a href="#" class="nav__mobile-submenu-item">Retirados</a>
+        </div>
+
+        <a href="#precios" class="nav__link" role="menuitem">Subasta</a>
+
+        <div class="nav__mobile-actions">
+          <div class="nav__mobile-ia-row">
+            <a href="#" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <span class="nav__action-ia-text">IA</span>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============================================================
+       HERO
+  ============================================================ -->
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true">
+          <!-- Animación JS de fondo: red de nodos + código flotante -->
+          <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+          <!-- Overlay oscuro para legibilidad del texto -->
+          <div class="hero__canvas-overlay"></div>
+          <div class="hero__grid"></div>
+          <div class="hero__bg-blob hero__bg-blob--1"></div>
+          <div class="hero__bg-blob hero__bg-blob--2"></div>
+          <div class="hero__bg-blob hero__bg-blob--3"></div>
+        </div>
+
+        <div class="u-container">
+          <div class="hero__inner">
+            <!-- Content -->
+            <div class="hero__content">
+              <!-- Slides de texto — rotan automáticamente sin controles -->
+              <div class="hero__slides" id="hero-slides" aria-live="polite">
+
+                <!-- Slide 1 — sin eyebrow -->
+                <div class="hero__slide is-active" role="group" aria-label="Slide 1 de 7">
+                  <h1 class="hero__title" id="hero-title">
+                    Impulsamos el futuro digital
+                    <span class="hero__title-accent">de nuestra región.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Transformamos tecnología en soluciones reales para conectar personas,
+                    optimizar gestiones y potenciar el mañana.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 2 — TELECOMUNICACIONES -->
+                <div class="hero__slide" role="group" aria-label="Slide 2 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    TELECOMUNICACIONES
+                  </div>
+                  <h1 class="hero__title">
+                    El pulso digital que mantiene
+                    <span class="hero__title-accent">a la región en movimiento.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Unimos distancias con una red de fibra óptica robusta y confiable,
+                    garantizando que cada dato llegue a su destino con velocidad y precisión.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 3 — INTERNET SATELITAL -->
+                <div class="hero__slide" role="group" aria-label="Slide 3 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    INTERNET SATELITAL
+                  </div>
+                  <h1 class="hero__title">
+                    Cobertura total,
+                    <span class="hero__title-accent">con tecnología de máximo alcance.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Internet satelital de alta velocidad para parajes, zonas rurales,
+                    vehículos y áreas remotas. Porque cada persona, sin importar dónde
+                    esté, merece la misma oportunidad de estar conectado.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 4 — SOFTWARE -->
+                <div class="hero__slide" role="group" aria-label="Slide 4 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    SOFTWARE
+                  </div>
+                  <h1 class="hero__title">
+                    Creamos herramientas inteligentes para
+                    <span class="hero__title-accent">decisiones estratégicas.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Desarrollamos soluciones digitales a medida, que optimizan la gestión
+                    pública y potencian la rentabilidad mediante la automatización.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 5 — DATACENTER -->
+                <div class="hero__slide" role="group" aria-label="Slide 5 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    DATACENTER
+                  </div>
+                  <h1 class="hero__title">
+                    Soberanía, respaldo y potencia para sus
+                    <span class="hero__title-accent">proyectos a escala global.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Aloje su infraestructura en el corazón tecnológico de la región,
+                    con soporte experto local y disponibilidad garantizada las 24 horas.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 6 — SEGURIDAD -->
+                <div class="hero__slide" role="group" aria-label="Slide 6 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    SEGURIDAD
+                  </div>
+                  <h1 class="hero__title">
+                    Blindamos su activo más valioso:
+                    <span class="hero__title-accent">la información.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Protección avanzada y protocolos de misión crítica para garantizar
+                    la continuidad operativa y la confianza total en entornos digitales complejos.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Slide 7 — I+D+i -->
+                <div class="hero__slide" role="group" aria-label="Slide 7 de 7">
+                  <div class="hero__eyebrow" aria-hidden="true">
+                    <span class="hero__eyebrow-dot"></span>
+                    I+D+i
+                  </div>
+                  <h1 class="hero__title">
+                    Exploramos las fronteras tecnológicas para
+                    <span class="hero__title-accent">diseñar el futuro hoy.</span>
+                  </h1>
+                  <p class="hero__subtitle">
+                    Impulsamos la adopción de Inteligencia Artificial, Smart Cities y
+                    nuevas tecnologías para transformar la calidad de vida y la eficiencia institucional.
+                  </p>
+                  <div class="hero__actions">
+                    <a href="#contacto" class="btn btn--primary btn--lg">
+                      Conocé más
+                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.hero__slides -->
+            </div>
+
+            <!-- Img hero wrap-->
+            <div class="hero__visual" aria-hidden="true">
+              <div class="hero__img-wrap hero__img-wrap--video">
+                <video
+                  class="hero__video"
+                  src="img/codigo.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                  aria-hidden="true"
+                ></video>
+                <div class="hero__video-fade" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         STATS — fondo blanco
+    ============================================================ -->
+      <section
+        class="section section--stats-white section--sm"
+        id="resultados"
+        aria-labelledby="stats-title"
+      >
+        <div class="u-container">
+          <h2 class="u-sr-only" id="stats-title">Métricas y resultados</h2>
+          <div class="stats__carousel" id="stats-carousel" role="region" aria-label="Estadísticas clave">
+            <div class="stats__track" id="stats-track">
+              <div class="stats__slide stats__item">
+                <div class="stat__value" data-target="3000" data-suffix=" km">3000 km</div>
+                <div class="stat__label">DE FIBRA OPTICA</div>
+              </div>
+              <div class="stats__slide stats__item">
+                <div class="stat__value" data-target="292">292</div>
+                <div class="stat__label">SISTEMAS ACTIVOS</div>
+              </div>
+              <div class="stats__slide stats__item">
+                <div class="stat__value" data-target="400" data-prefix="+ ">+ 400</div>
+                <div class="stat__label">TRABAJADORES</div>
+              </div>
+              <div class="stats__slide stats__item">
+                <div class="stat__value" data-target="6113">6113</div>
+                <div class="stat__label">USUARIOS CONECTADOS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         INNOVA CONECTA TRANSFORMA — CARDS 3×2
+    ============================================================ -->
+      <section class="section ejes" id="ejes" aria-labelledby="ejes-title">
+        <div class="u-container">
+          <div class="ejes__grid" role="list">
+
+            <!-- ── Card 1 · TELECOMUNICACIONES ── -->
+            <article class="eje-card eje-card--overlay-pink reveal reveal--delay-1" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/TELECOMUNICACIONES.jpg"
+                  alt="Telecomunicaciones ECOM — Conectividad y redes"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">TELECOMUNICACIONES</span>
+                <h3 class="eje-card__title">Conectividad y redes de alta disponibilidad</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">El pulso digital que mantiene a la región en movimiento.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre Telecomunicaciones">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- ── Card 2 · INTERNET SATELITAL ── -->
+            <article class="eje-card eje-card--overlay-navy reveal reveal--delay-1" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/INTERNETSATELITAL.jpg"
+                  alt="Internet Satelital ECOM — Conectividad sin fronteras"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">INTERNET SATELITAL</span>
+                <h3 class="eje-card__title">Conectividad Satelital sin fronteras</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">Cobertura total, con tecnología de máximo alcance.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre Internet Satelital">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- ── Card 3 · SOFTWARE ── -->
+            <article class="eje-card eje-card--overlay-pink reveal reveal--delay-3" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/SOFTWARE.jpg"
+                  alt="Software ECOM — Ingeniería y transformación de procesos"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">SOFTWARE</span>
+                <h3 class="eje-card__title">Ingeniería de software y transformación de procesos</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">Creamos herramientas inteligentes para decisiones estratégicas.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre Software">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- ── Card 4 · DATACENTER ── -->
+            <article class="eje-card eje-card--overlay-navy reveal reveal--delay-1" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/DATACENTER.jpg"
+                  alt="Datacenter ECOM — Nube regional y soluciones"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">DATACENTER</span>
+                <h3 class="eje-card__title">Nube regional y soluciones de datacenter</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">Soberanía, respaldo y potencia para sus proyectos a escala global.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre Datacenter">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- ── Card 5 · SEGURIDAD ── -->
+            <article class="eje-card eje-card--overlay-pink reveal reveal--delay-2" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/SEGURIDAD.jpg"
+                  alt="Seguridad ECOM — Ciberseguridad e integridad de datos"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">SEGURIDAD</span>
+                <h3 class="eje-card__title">Ciberseguridad e integridad de datos</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">Blindamos su activo más valioso: La información.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre Seguridad">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- ── Card 6 · I+D+i ── -->
+            <article class="eje-card eje-card--overlay-navy reveal reveal--delay-3" role="listitem">
+              <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
+                <img class="eje-card__img" src="img/cards/ID.jpg"
+                  alt="I+D+i ECOM — Hub de innovación"
+                  width="600" height="900" loading="lazy" decoding="async" />
+                <div class="eje-card__overlay" aria-hidden="true"></div>
+              </a>
+              <div class="eje-card__header">
+                <span class="eje-card__tag">I+D+i</span>
+                <h3 class="eje-card__title">Hub de innovación: I+D+I</h3>
+              </div>
+              <div class="eje-card__body">
+                <p class="eje-card__desc">Exploramos las fronteras tecnológicas para diseñar el futuro hoy.</p>
+                <a href="#" class="btn btn--primary btn--sm eje-card__cta" aria-label="Conocer más sobre I+D+i">
+                  Conocer más
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+          <!-- /.ejes__grid -->
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SERVICIOS
+    ============================================================ -->
+      <section class="section" id="servicios" aria-labelledby="services-title" style="display:flex; align-items:center; justify-content:center;">
+        <h2 class="section__title" id="services-title" style="text-align:center; white-space:nowrap; margin:0;">
+          Soluciones, tecnología y comunicación
+        </h2>
+      </section>
+
+      <!-- ============================================================
+         SOMOS EXPANSIÓN
+      ============================================================ -->
+      <section class="expansion" id="expansion" aria-label="Somos expansión — ECOM">
+        <!-- Video mapa fibra como fondo -->
+        <div class="expansion__bg" aria-hidden="true">
+          <video
+            class="expansion__bg-video"
+            src="img/mapa-fibra.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+        </div>
+
+        <div class="u-container">
+          <div class="expansion__content reveal">
+            <p class="expansion__eyebrow">Somos expansión</p>
+
+            <div class="expansion__slides" id="expansion-slides" aria-live="polite">
+
+              <div class="expansion__slide is-active" role="group" aria-label="Slide 1 de 5">
+                <h2 class="expansion__title">Construyendo la red que une nuestro futuro.</h2>
+              </div>
+
+              <div class="expansion__slide" role="group" aria-label="Slide 2 de 5">
+                <h2 class="expansion__title">Donde la infraestructura se convierte en progreso.</h2>
+              </div>
+
+              <div class="expansion__slide" role="group" aria-label="Slide 3 de 5">
+                <h2 class="expansion__title">Conectividad de alta performance en todo el territorio.</h2>
+              </div>
+
+              <div class="expansion__slide" role="group" aria-label="Slide 4 de 5">
+                <h2 class="expansion__title">Integramos el futuro de cada chaqueño reduciendo la brecha digital.</h2>
+              </div>
+
+              <div class="expansion__slide" role="group" aria-label="Slide 5 de 5">
+                <h2 class="expansion__title">Modernizamos la gestión pública e impulsamos soluciones 100% digitales.</h2>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================================
+         NOTICIAS
+    ============================================================ -->
+
+      <section
+        class="section section--alt noticias"
+        id="noticias"
+        aria-labelledby="noticias-title"
+      >
+        <div class="u-container">
+          <!-- Encabezado de sección -->
+          <div class="section__header--center reveal">
+            <span class="section-label">Actualidad</span>
+            <h2 class="section__title" id="noticias-title">
+              Novedades
+            </h2>
+          </div>
+
+          <!-- Grid de cards -->
+          <div class="noticias__grid" role="list">
+            <!-- Card 1 -->
+            <article class="news-card reveal reveal--delay-1" role="listitem">
+              <a
+                href="#"
+                class="news-card__img-wrap"
+                aria-label="Ver noticia: ECOM extiende su red de fibra óptica al interior chaqueño"
+                tabindex="-1"
+              >
+                <img
+                  class="news-card__img"
+                  src="./img/not1.png"
+                  alt="Técnicos de ECOM desplegando fibra óptica en el interior de la provincia del Chaco"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="news-card__category">Infraestructura</span>
+              </a>
+              <div class="news-card__body">
+                <time class="news-card__date" datetime="2026-02-18"
+                  >18 Feb 2026</time
+                >
+                <h3 class="news-card__title">
+                  <a href="#" class="news-card__title-link">
+                    ECOM Chaco participó de la Smart City Expo 2026 y avanza en una agenda de cooperación tecnológica con ENERSE SAPEM
+                  </a>
+                </h3>
+                <p class="news-card__desc">
+                  Nuestra empresa formó parte del mayor encuentro de...
+                </p>
+                <a
+                  href="#"
+                  class="btn btn--outline btn--sm news-card__cta"
+                  aria-label="Leer más sobre ECOM extiende su red de fibra óptica al interior chaqueño"
+                >
+                  Leer más
+                  <svg
+                    class="btn__icon btn__icon--arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="news-card reveal reveal--delay-2" role="listitem">
+              <a
+                href="#"
+                class="news-card__img-wrap"
+                aria-label="Ver noticia: Nuevo sistema de monitoreo inteligente para la red de datos"
+                tabindex="-1"
+              >
+                <img
+                  class="news-card__img"
+                  src="./img/not2.jpg"
+                  alt="Centro de monitoreo de red de ECOM con múltiples pantallas mostrando métricas en tiempo real"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="news-card__category">Tecnología</span>
+              </a>
+              <div class="news-card__body">
+                <time class="news-card__date" datetime="2026-02-05"
+                  >5 Feb 2026</time
+                >
+                <h3 class="news-card__title">
+                  <a href="#" class="news-card__title-link">
+                    Alianza tecnológica: ECOM y Telecentro firman acuerdo estratégico para continuar fortaleciendo la infraestructura tecnológica de Chaco
+                  </a>
+                </h3>
+                <p class="news-card__desc">
+                  En un paso decisivo hacia la modernización del Est...
+                </p>
+                <a
+                  href="#"
+                  class="btn btn--outline btn--sm news-card__cta"
+                  aria-label="Leer más sobre Nuevo sistema de monitoreo inteligente para la red de datos"
+                >
+                  Leer más
+                  <svg
+                    class="btn__icon btn__icon--arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="news-card reveal reveal--delay-3" role="listitem">
+              <a
+                href="#"
+                class="news-card__img-wrap"
+                aria-label="Ver noticia: ECOM y el Gobierno del Chaco firman convenio de digitalización"
+                tabindex="-1"
+              >
+                <img
+                  class="news-card__img"
+                  src="./img/not3.png"
+                  alt="Firma del convenio de digitalización provincial entre ECOM y autoridades del Gobierno del Chaco"
+                  width="600"
+                  height="340"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="news-card__category">Institucional</span>
+              </a>
+              <div class="news-card__body">
+                <time class="news-card__date" datetime="2026-01-22"
+                  >22 Ene 2026</time
+                >
+                <h3 class="news-card__title">
+                  <a href="#" class="news-card__title-link">
+                    ECOM participó del desarrollo de “Multitienda Chaco”, la nueva plataforma digital para potenciar la producción chaqueña.
+                  </a>
+                </h3>
+                <p class="news-card__desc">
+                  ECOM formó parte del desarrollo de “Multitienda Chaco"...
+                </p>
+                <a
+                  href="#"
+                  class="btn btn--outline btn--sm news-card__cta"
+                  aria-label="Leer más sobre ECOM y el Gobierno del Chaco firman convenio de digitalización"
+                >
+                  Leer más
+                  <svg
+                    class="btn__icon btn__icon--arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+          <!-- /.noticias__grid -->
+
+          <!-- Ver todas las noticias -->
+          <div class="noticias__footer reveal">
+            <a
+              href="#"
+              class="btn btn--primary btn--lg"
+              aria-label="Ver más novedades de ECOM Chaco"
+            >
+              Ver más
+              <svg
+                class="btn__icon btn__icon--arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         CONECTIVIDAD SIN LÍMITES
+      ============================================================ -->
+      <section class="section conectividad" id="conectividad" aria-labelledby="conectividad-title">
+        <div class="u-container">
+          <div class="conectividad__inner">
+
+            <!-- Columna texto -->
+            <div class="reveal">
+              <h2 class="conectividad__title" id="conectividad-title">
+                Conectividad<br />Sin Límites
+              </h2>
+              <p class="conectividad__desc">
+                En ECOM, acercamos el futuro a tu alcance. Te presentamos nuestra
+                solución de Internet Satelital Móvil: conectividad ininterrumpida
+                que te acompaña a donde vayas.
+              </p>
+              <a href="#" class="btn btn--primary btn--lg">
+                Más información
+                <svg
+                  class="btn__icon btn__icon--arrow"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Columna imagen -->
+            <div class="conectividad__img-wrap reveal reveal--delay-2">
+              <img
+                src="img/satelital.jpg"
+                alt="ECOM Satelital Móvil — conectividad ininterrumpida"
+                class="conectividad__img"
+                width="680"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         LOGO GOBIERNO DEL CHACO
+      ============================================================ -->
+      <section class="secgob" aria-label="Gobierno del Chaco">
+        <div class="u-container">
+          <a
+            href="https://chaco.gob.ar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="secgob__link"
+            aria-label="Visitar el sitio oficial del Gobierno del Chaco"
+          >
+            <div class="secgob__card reveal">
+              <img
+                src="img/banngob.gif"
+                alt="Gobierno del Chaco"
+                class="secgob__logo"
+                loading="lazy"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         TESTIMONIALS — (oculto, no activo por el momento)
+      ============================================================ -->
+      <!--
+      <section class="section" aria-labelledby="testimonials-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Testimonios</span>
+            <h2 class="section__title" id="testimonials-title">
+              Que dicen nuestros clientes
+            </h2>
+          </div>
+
+          <div class="testimonials__grid">
+            <div class="testimonial reveal reveal--delay-1">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">
+                ECOM transformó completamente cómo manejamos la seguridad.
+                Pasamos de reaccionar a incidentes a prevenirlos. El ROI fue
+                visible en el primer trimestre.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">MC</div>
+                <div>
+                  <div class="testimonial__name">Martina Cortés</div>
+                  <div class="testimonial__role">CTO — Axionit</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial reveal reveal--delay-2">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">
+                La integración fue más rápida de lo esperado. En 6 horas
+                teníamos todo funcionando. El soporte 24/7 ha sido fundamental
+                para nuestras operaciones globales.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">RF</div>
+                <div>
+                  <div class="testimonial__name">Ricardo Fuentes</div>
+                  <div class="testimonial__role">
+                    VP Infraestructura — Kortexa
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial reveal reveal--delay-3">
+              <div class="testimonial__quote" aria-hidden="true">"</div>
+              <p class="testimonial__text">
+                Los modelos de IA de ECOM nos ayudaron a reducir costos
+                operativos un 42% en 6 meses. La plataforma se adaptó
+                perfectamente a nuestro flujo de trabajo.
+              </p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" aria-hidden="true">SL</div>
+                <div>
+                  <div class="testimonial__name">Sofía Leal</div>
+                  <div class="testimonial__role">CEO — Vortexio</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!-- ============================================================
+         PRICING
+    ============================================================ -->
+      <!--  <section
+        class="section section--alt"
+        id="precios"
+        aria-labelledby="pricing-title"
+      >
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Precios</span>
+            <h2 class="section__title" id="pricing-title">
+              Planes transparentes, sin sorpresas
+            </h2>
+            <p class="section__desc">
+              Elige el plan que mejor se adapte a tu empresa. Sin contratos
+              ocultos, sin cargos inesperados.
+            </p>
+          </div>
+
+          <div class="pricing__grid">
+           
+            <div class="pricing-card reveal reveal--delay-1">
+              <div class="pricing-card__name">Starter</div>
+              <div class="pricing-card__price"><sup>$</sup>49</div>
+              <div class="pricing-card__period">por mes / hasta 5 usuarios</div>
+              <div class="pricing-card__divider"></div>
+              <ul
+                class="pricing-card__features"
+                aria-label="Características del plan Starter"
+              >
+                <li class="pricing-card__feature">Monitoreo básico 24/7</li>
+                <li class="pricing-card__feature">Firewall inteligente</li>
+                <li class="pricing-card__feature">5 GB cloud storage</li>
+                <li class="pricing-card__feature">Soporte por email</li>
+                <li class="pricing-card__feature">Dashboard básico</li>
+              </ul>
+              <a
+                href="#contacto"
+                class="btn btn--outline"
+                style="width: 100%; justify-content: center"
+                >Comenzar gratis</a
+              >
+            </div>
+
+        
+            <div
+              class="pricing-card pricing-card--featured reveal reveal--delay-2"
+            >
+              <div class="pricing-card__name">Growth</div>
+              <div class="pricing-card__price"><sup>$</sup>149</div>
+              <div
+                class="pricing-card__period"
+                style="color: rgba(242, 244, 249, 0.45)"
+              >
+                por mes / hasta 25 usuarios
+              </div>
+              <div class="pricing-card__divider"></div>
+              <ul
+                class="pricing-card__features"
+                aria-label="Características del plan Growth"
+              >
+                <li class="pricing-card__feature">Todo lo del plan Starter</li>
+                <li class="pricing-card__feature">IA predictiva incluida</li>
+                <li class="pricing-card__feature">100 GB cloud storage</li>
+                <li class="pricing-card__feature">200+ integraciones</li>
+                <li class="pricing-card__feature">Soporte prioritario 24/7</li>
+                <li class="pricing-card__feature">Analytics avanzado</li>
+              </ul>
+              <a
+                href="#contacto"
+                class="btn btn--primary"
+                style="width: 100%; justify-content: center"
+                >Comenzar ahora</a
+              >
+            </div>
+
+           
+            <div class="pricing-card reveal reveal--delay-3">
+              <div class="pricing-card__name">Enterprise</div>
+              <div
+                class="pricing-card__price"
+                style="font-size: var(--text-4xl)"
+              >
+                Custom
+              </div>
+              <div class="pricing-card__period">
+                usuarios y recursos ilimitados
+              </div>
+              <div class="pricing-card__divider"></div>
+              <ul
+                class="pricing-card__features"
+                aria-label="Características del plan Enterprise"
+              >
+                <li class="pricing-card__feature">Todo lo del plan Growth</li>
+                <li class="pricing-card__feature">Infraestructura dedicada</li>
+                <li class="pricing-card__feature">SLA 99.99% garantizado</li>
+                <li class="pricing-card__feature">Customer Success Manager</li>
+                <li class="pricing-card__feature">Compliance personalizado</li>
+                <li class="pricing-card__feature">Onboarding dedicado</li>
+              </ul>
+              <a
+                href="#contacto"
+                class="btn btn--dark"
+                style="width: 100%; justify-content: center"
+                >Contactar ventas</a
+              >
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- ============================================================
+         LOGOS / CLIENTES — oculto, disponible para reactivar
+      ============================================================ -->
+      <!--
+      <section class="logos" aria-label="Clientes que confían en ECOM">
+        <div class="u-container">
+          <p class="logos__label">Trabajamos con tecnología de vanguardia</p>
+          <div class="logos__track" aria-hidden="true">
+            <span class="logos__item">Genexus</span>
+            <span class="logos__item">Oracle</span>
+            <span class="logos__item">Microsoft</span>
+            <span class="logos__item">IBM</span>
+            <span class="logos__item">Amazon</span>
+            <span class="logos__item">Pomelo</span>
+            <span class="logos__item">Bind</span>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!--========== CONTACTO SECTION ==========================-->
+
+      <section
+        class="section contact"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Contacto</span>
+            <h2 class="section__title" id="contact-title">
+              ¿Querés saber más de nuestros productos y servicios?
+            </h2>
+            <p class="section__desc">
+              Contanos sobre las necesidades tecnológicas que tenés y nuestros especialistas te brindarán información personalizada.
+            </p>
+          </div>
+
+          <div class="contact__grid">
+
+            <!-- ── Form column ── -->
+            <div
+              class="contact__form-wrap reveal reveal--delay-2"
+              id="contact-form-wrap"
+            >
+              <form
+                class="form"
+                id="contact-form"
+                novalidate
+                aria-label="Formulario de contacto"
+              >
+                <!-- Row 1: Nombre + Empresa -->
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="contact-name">
+                      Nombre y Apellido <abbr title="requerido" aria-hidden="true">*</abbr>
+                    </label>
+                    <div class="form__input-wrap">
+                      <svg
+                        class="form__input-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                      <input
+                        class="form__input form__input--icon"
+                        type="text"
+                        id="contact-name"
+                        name="name"
+                        placeholder="Nombre y Apellido"
+                        autocomplete="given-name"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label" for="contact-direccion">
+                      Dirección
+                      <abbr title="requerido" aria-hidden="true">*</abbr>
+                    </label>
+                    <div class="form__input-wrap">
+                      <svg
+                        class="form__input-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                      </svg>
+                      <input
+                        class="form__input form__input--icon"
+                        type="text"
+                        id="contact-direccion"
+                        name="direccion"
+                        placeholder="Dirección"
+                        autocomplete="street-address"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.form__row -->
+
+                <!-- Row 2: Email + Teléfono -->
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="contact-email">
+                      E-mail
+                      <abbr title="requerido" aria-hidden="true">*</abbr>
+                    </label>
+                    <div class="form__input-wrap">
+                      <svg
+                        class="form__input-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        />
+                        <polyline points="22,6 12,13 2,6" />
+                      </svg>
+                      <input
+                        class="form__input form__input--icon"
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="E-mail"
+                        autocomplete="email"
+                        required
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label" for="contact-phone"
+                      >Teléfono</label
+                    >
+                    <div class="form__input-wrap">
+                      <svg
+                        class="form__input-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.36 2 2 0 0 1 3.56 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 15.5v1.42z"
+                        />
+                      </svg>
+                      <input
+                        class="form__input form__input--icon"
+                        type="tel"
+                        id="contact-phone"
+                        name="phone"
+                        placeholder="Teléfono"
+                        autocomplete="tel"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!-- /.form__row -->
+
+                <!-- Row 3: Localidad + Producto/Servicio -->
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="contact-localidad">
+                      Localidad
+                    </label>
+                    <div class="form__input-wrap">
+                      <svg
+                        class="form__input-icon"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.8"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      <input
+                        class="form__input form__input--icon"
+                        type="text"
+                        id="contact-localidad"
+                        name="localidad"
+                        placeholder="Localidad"
+                        autocomplete="address-level2"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label" for="contact-service">
+                      Producto/Servicio
+                      <abbr title="requerido" aria-hidden="true">*</abbr>
+                    </label>
+                    <div class="form__select-wrap">
+                      <select
+                        class="form__select"
+                        id="contact-service"
+                        name="service"
+                        required
+                        aria-required="true"
+                      >
+                        <option value="" disabled selected>
+                          Selecciona una opción
+                        </option>
+                        <option value="cybersecurity">
+                          Ciberseguridad avanzada
+                        </option>
+                        <option value="cloud">Cloud e infraestructura</option>
+                        <option value="ai">Inteligencia artificial</option>
+                        <option value="analytics">Monitoreo y analytics</option>
+                        <option value="integrations">APIs e integraciones</option>
+                        <option value="enterprise">
+                          Solución Enterprise personalizada
+                        </option>
+                        <option value="other">Otro / No sé aún</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.form__row -->
+
+                <!-- Mensaje -->
+                <div class="form__field">
+                  <label class="form__label" for="contact-message">
+                    Mensaje <abbr title="requerido" aria-hidden="true">*</abbr>
+                  </label>
+                  <textarea
+                    class="form__textarea"
+                    id="contact-message"
+                    name="message"
+                    placeholder="Mensaje"
+                    required
+                    aria-required="true"
+                    minlength="20"
+                  ></textarea>
+                </div>
+
+                <!-- Checkbox privacidad -->
+                <!--         <div class="form__field">
+                  <label class="form__checkbox-wrap">
+                    <input
+                      class="form__checkbox"
+                      type="checkbox"
+                      id="contact-privacy"
+                      name="privacy"
+                      required
+                      aria-required="true"
+                    />
+                    <span class="form__checkbox-label">
+                      He leído y acepto la
+                      <a href="#" tabindex="0">Política de privacidad</a> y los
+                      <a href="#" tabindex="0">Términos de servicio</a> de
+                      Nexora.
+                    </span>
+                  </label>
+                </div> -->
+
+                <!-- Submit -->
+                <button
+                  type="submit"
+                  class="btn btn--primary form__submit"
+                  aria-label="Solicitar información"
+                >
+                  <span class="form__submit-text">Solicitar información</span>
+                  <svg
+                    class="btn__icon btn__icon--arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                  <span class="btn__spinner" aria-hidden="true"></span>
+                </button>
+              </form>
+              <!-- /.form -->
+
+              <!-- Success state (hidden until JS triggers it) -->
+              <div
+                class="contact__success"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                <div class="contact__success-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+                <h3 class="contact__success-title">¡Mensaje enviado!</h3>
+                <p class="contact__success-desc">
+                  Gracias por contactarnos. Un especialista se comunicará
+                  contigo en las próximas 24 horas hábiles.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn--outline"
+                  id="contact-reset"
+                  aria-label="Enviar otro mensaje"
+                >
+                  Enviar otro mensaje
+                </button>
+              </div>
+            </div>
+            <!-- /.contact__form-wrap -->
+          </div>
+          <!-- /.contact__grid -->
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="u-container">
+        <div class="footer__grid">
+
+          <!-- Columna 1: Logo + Contacto -->
+          <div class="footer__brand">
+            <a href="#inicio" aria-label="ECOM Tecnología y Comunicaciones">
+              <img src="img/ecomsa.png" alt="ECOM Tecnología y Comunicaciones" class="footer__logo-img" />
+            </a>
+
+            <p class="footer__col-title" style="margin-top: var(--space-10);">CONTACTO:</p>
+
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5 19.79 19.79 0 0 1 1.07 2.88 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+                <a href="tel:+543624419300" class="footer__contact-link">+54 362 441-9300</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <a href="https://wa.me/5493624810854" class="footer__contact-link">+54 9 362 481-0854</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                <a href="mailto:at.clientes@ecom.com.ar" class="footer__contact-link">at.clientes@ecom.com.ar</a>
+              </li>
+            </ul>
+
+            <div class="footer__divider"></div>
+
+            <p class="footer__address">
+              Lunes a Viernes - 6:00 a 20:00 hs<br>
+              Roque Sáenz Peña 352/370<br>
+              Resistencia - Chaco - Argentina
+            </p>
+          </div>
+
+          <!-- Columna 2: Accesos -->
+          <div class="footer__col">
+            <h3 class="footer__col-title">ACCESOS:</h3>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="#" class="footer__link">Clientes</a>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="proveedores.html" class="footer__link">Proveedores</a>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="#" class="footer__link">Personal de ECOM</a>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="#" class="footer__link">Retirados</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Información -->
+          <div class="footer__col">
+            <h3 class="footer__col-title">INFORMACIÓN:</h3>
+            <ul class="footer__links">
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="#" class="footer__link">Planos FO</a>
+              </li>
+              <li class="footer__list-item">
+                <span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#ec268f"/><path d="M10 8l4 4-4 4" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <a href="#" class="footer__link">Cronograma</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Redes sociales -->
+          <div class="footer__col">
+            <h3 class="footer__col-title footer__col-title--social">Seguinos en redes sociales:</h3>
+            <nav class="footer__social footer__social--plain" aria-label="Redes sociales">
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+              </a>
+            </nav>
+            <div class="footer__divider"></div>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2026 ECOM Todos los derechos reservados.</p>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       WHATSAPP FLOTANTE
+  ============================================================ -->
+    <a
+      href="https://wa.me/5493624419300"
+      class="whatsapp-fab"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="whatsapp-fab__icon">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+      </svg>
+    </a>
+
+    <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+    <script src="js/hero-canvas.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

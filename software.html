@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Soluciones de software de vanguardia, integrales, modulares y a medida — ECOM Tecnología y Comunicaciones."
+    />
+    <meta
+      name="keywords"
+      content="software, sistemas, gestión, sector público, sector privado, apps móviles, ECOM, Chaco"
+    />
+    <meta name="author" content="Ecom Tecnologia y comunicaciones" />
+    <meta property="og:title" content="Software — ECOM Chaco" />
+    <meta
+      property="og:description"
+      content="Soluciones de software de vanguardia, integrales, modulares y a medida de tus necesidades."
+    />
+    <meta property="og:type" content="website" />
+    <title>Software — ECOM Tecnología y Comunicaciones</title>
+
+    <!-- CSS compartido -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- CSS exclusivo de esta página -->
+    <link rel="stylesheet" href="css/software.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ============================================================
+         NAV — idéntico al resto del sitio
+    ============================================================ -->
+    <header class="nav" id="nav" role="banner">
+      <div class="u-container">
+        <nav class="nav__inner" aria-label="Navegación principal">
+
+          <!-- Logos desktop: se alternan según estado del scroll -->
+          <div class="nav__logo-wrap">
+            <a href="index.html" class="nav__logo-scroll" aria-label="ECOM — Inicio">
+              <img src="img/blow.png" alt="ECOM" class="nav__logo-scroll__img" />
+            </a>
+            <a href="index.html" class="nav__logo-initial" aria-label="ECOM — Inicio">
+              <img src="img/ecomsa.png" alt="ECOM" class="nav__logo-initial__img" />
+            </a>
+          </div>
+
+          <a href="index.html" class="nav__logo-mobile" aria-label="ECOM — Inicio">
+            <img src="img/blow.png" alt="ECOM" class="nav__logo-mobile__img" />
+          </a>
+
+          <ul class="nav__menu" role="menubar">
+
+            <li role="none">
+              <a href="index.html" class="nav__link" role="menuitem">Inicio</a>
+            </li>
+
+            <li role="none">
+              <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+            </li>
+
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-soluciones">
+                Soluciones
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-soluciones">
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Telecomunicaciones</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Internet satelital</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="software.html" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Software</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Datacenter</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Seguridad</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">I+D+i</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+            </li>
+
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-accesos">
+                Accesos
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Proveedores</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Personal de ECOM</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Retirados</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="index.html#precios" class="nav__link" role="menuitem">Subasta</a>
+            </li>
+
+          </ul>
+
+          <div class="nav__actions">
+            <a href="#" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#" class="nav__action-avatar" aria-label="Área personal">
+              <span class="nav__action-avatar-initials">IA</span>
+            </a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
+          </div>
+
+          <button
+            class="nav__toggle"
+            id="nav-toggle"
+            aria-controls="nav-mobile"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav__mobile" id="nav-mobile" aria-hidden="true" role="menu">
+        <a href="index.html" class="nav__link" role="menuitem">Inicio</a>
+
+        <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-soluciones">
+          Soluciones
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-soluciones" aria-hidden="true">
+          <a href="#" class="nav__mobile-submenu-item">Telecomunicaciones</a>
+          <a href="#" class="nav__mobile-submenu-item">Internet satelital</a>
+          <a href="software.html" class="nav__mobile-submenu-item">Software</a>
+          <a href="#" class="nav__mobile-submenu-item">Datacenter</a>
+          <a href="#" class="nav__mobile-submenu-item">Seguridad</a>
+          <a href="#" class="nav__mobile-submenu-item">I+D+i</a>
+        </div>
+
+        <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-accesos">
+          Accesos
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
+          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="#" class="nav__mobile-submenu-item">Proveedores</a>
+          <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
+          <a href="#" class="nav__mobile-submenu-item">Retirados</a>
+        </div>
+
+        <a href="index.html#precios" class="nav__link" role="menuitem">Subasta</a>
+
+        <div class="nav__mobile-actions">
+          <div class="nav__mobile-ia-row">
+            <a href="#" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <span class="nav__action-ia-text">IA</span>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="software-inicio">
+
+      <!-- ============================================================
+           HERO — Animación canvas + texto de la imagen de referencia
+      ============================================================ -->
+      <section class="sw-hero" aria-labelledby="sw-hero-title">
+        <!-- Canvas: solo objetos animados, sin texto -->
+        <canvas id="sw-canvas" class="sw-hero__canvas" aria-hidden="true"></canvas>
+        <div class="sw-hero__overlay" aria-hidden="true"></div>
+
+        <div class="u-container">
+          <div class="sw-hero__inner">
+            <!-- Texto -->
+            <div class="sw-hero__content">
+              <div class="hero__eyebrow">
+                <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+                SOLUCIONES TECNOLÓGICAS
+              </div>
+
+              <h1 class="sw-hero__title" id="sw-hero-title">
+                <span class="sw-hero__title-accent">Software</span>
+              </h1>
+
+              <p class="sw-hero__subtitle">
+                Soluciones de vanguardia, integrales, modulares y a medida de tus necesidades.
+              </p>
+
+              <div class="hero__actions">
+                <a href="#sector-privado" class="btn btn--primary btn--lg">
+                  Ver soluciones
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#contacto" class="btn btn--outline btn--lg" style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.35);">
+                  Contactanos
+                </a>
+              </div>
+            </div>
+
+            <!-- Panel visual decorativo (solo CSS, sin texto) -->
+            <div class="sw-hero__visual" aria-hidden="true">
+              <div class="sw-hero__panel">
+                <div class="sw-hero__panel-dots">
+                  <span class="sw-hero__panel-dot"></span>
+                  <span class="sw-hero__panel-dot"></span>
+                  <span class="sw-hero__panel-dot"></span>
+                </div>
+                <div class="sw-hero__panel-bar"></div>
+                <div class="sw-hero__panel-bar"></div>
+                <div class="sw-hero__panel-bar"></div>
+                <div class="sw-hero__panel-bar"></div>
+                <div class="sw-hero__panel-bar"></div>
+                <div class="sw-hero__panel-grid">
+                  <div class="sw-hero__panel-chip"></div>
+                  <div class="sw-hero__panel-chip"></div>
+                  <div class="sw-hero__panel-chip"></div>
+                  <div class="sw-hero__panel-chip"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           STATS
+      ============================================================ -->
+      <section class="section sw-stats" id="estadisticas" aria-label="Estadísticas de software ECOM">
+        <div class="u-container">
+          <div class="sw-stats__grid">
+            <div class="sw-stat reveal">
+              <div class="sw-stat__value">+300</div>
+              <div class="sw-stat__label">Sistemas Activos</div>
+            </div>
+            <div class="sw-stat reveal reveal--delay-1">
+              <div class="sw-stat__value">+30</div>
+              <div class="sw-stat__label">Sistemas Nuevos</div>
+            </div>
+            <div class="sw-stat reveal reveal--delay-2">
+              <div class="sw-stat__value">+20</div>
+              <div class="sw-stat__label">Apps Móviles</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTOR PRIVADO
+      ============================================================ -->
+      <section class="section" id="sector-privado" aria-labelledby="privado-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Sector Privado</span>
+            <h2 class="section__title" id="privado-title">
+              Conocé los sistemas de software que tenemos para ofrecerte
+            </h2>
+          </div>
+
+          <div class="sw-cards__grid">
+
+            <!-- SSV -->
+            <article class="sw-card reveal reveal--delay-1">
+              <div class="sw-card__badge">SSV</div>
+              <h3 class="sw-card__title">Sistema de Seguimiento Vehicular</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SSV">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SGD -->
+            <article class="sw-card reveal reveal--delay-2">
+              <div class="sw-card__badge">SGD</div>
+              <h3 class="sw-card__title">Sistema de Gestión Documental</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGD">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SLH -->
+            <article class="sw-card reveal reveal--delay-3">
+              <div class="sw-card__badge">SLH</div>
+              <h3 class="sw-card__title">Sistema de Liquidación de Haberes</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SLH">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SCP -->
+            <article class="sw-card reveal reveal--delay-4">
+              <div class="sw-card__badge">SCP</div>
+              <h3 class="sw-card__title">Sistema de Control Seguimiento y Gestión del Personal</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCP">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SGT -->
+            <article class="sw-card reveal reveal--delay-1">
+              <div class="sw-card__badge">SGT</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Tickets</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGT">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- ERP -->
+            <article class="sw-card reveal reveal--delay-2">
+              <div class="sw-card__badge">ERP</div>
+              <h3 class="sw-card__title">Sistema de Gestión Administrativo</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre ERP">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SVISIT -->
+            <article class="sw-card reveal reveal--delay-3">
+              <div class="sw-card__badge">SVISIT</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Visitantes</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SVISIT">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SAB -->
+            <article class="sw-card reveal reveal--delay-4">
+              <div class="sw-card__badge">SAB</div>
+              <h3 class="sw-card__title">Sistema de Gestión y seguimiento de expedientes para Abogados</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SAB">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SMUT -->
+            <article class="sw-card reveal reveal--delay-1">
+              <div class="sw-card__badge">SMUT</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Multas</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SMUT">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SCR -->
+            <article class="sw-card reveal reveal--delay-2">
+              <div class="sw-card__badge">SCR</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Créditos</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCR">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- Club de Descuentos (Próximamente) -->
+            <article class="sw-card sw-card--coming reveal reveal--delay-3">
+              <div class="sw-card__badge">Club de Descuentos</div>
+              <h3 class="sw-card__title" style="color:var(--color-text-muted);">¡Próximamente!</h3>
+              <span class="sw-card__soon" aria-label="Próximamente disponible">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Próximamente
+              </span>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           SECTOR PÚBLICO
+      ============================================================ -->
+      <section class="section section--sw-alt" id="sector-publico" aria-labelledby="publico-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Sector Público</span>
+            <h2 class="section__title" id="publico-title">
+              Conocé los sistemas de software que tenemos para ofrecerte
+            </h2>
+          </div>
+
+          <div class="sw-cards__grid">
+
+            <!-- SGT público -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-1">
+              <div class="sw-card__badge">SGT</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Trámites</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGT">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SGM -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-2">
+              <div class="sw-card__badge">SGM</div>
+              <h3 class="sw-card__title">Sistema de Gestión Municipal</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGM">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SIGA -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-3">
+              <div class="sw-card__badge">SIGA</div>
+              <h3 class="sw-card__title">Sistema de Gestión Administrativos</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIGA">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SCOM -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-4">
+              <div class="sw-card__badge">SCOM</div>
+              <h3 class="sw-card__title">Sistema de Compras y Contrataciones</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCOM">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SRRHH -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-1">
+              <div class="sw-card__badge">SRRHH</div>
+              <h3 class="sw-card__title">Sistema de Recursos Humanos</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SRRHH">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SBP -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-2">
+              <div class="sw-card__badge">SBP</div>
+              <h3 class="sw-card__title">Sistema de Bienes Patrimoniales</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SBP">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SIE -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-3">
+              <div class="sw-card__badge">SIE</div>
+              <h3 class="sw-card__title">Sistema de Información de Educación</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIE">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- GPO -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-4">
+              <div class="sw-card__badge">GPO</div>
+              <h3 class="sw-card__title">Sistema de Gestión de Obras Públicas</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre GPO">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SEL -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-1">
+              <div class="sw-card__badge">SEL</div>
+              <h3 class="sw-card__title">Sistema de Gestión Electoral</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SEL">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+            <!-- SIV -->
+            <article class="sw-card sw-card--publico reveal reveal--delay-2">
+              <div class="sw-card__badge">SIV</div>
+              <h3 class="sw-card__title">Sistema Integrado de Vivienda</h3>
+              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIV">
+                + Info
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           BANNER — Innovación | Agilidad | Evolución
+      ============================================================ -->
+      <section class="sw-banner" aria-label="Valores de la plataforma de software ECOM">
+        <div class="u-container">
+          <p class="sw-banner__text reveal">
+            Innovación <span>|</span> Agilidad <span>|</span> Evolución
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           DESARROLLOS A MEDIDA
+      ============================================================ -->
+      <section class="section" id="desarrollos" aria-labelledby="dev-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Personalizados</span>
+            <h2 class="section__title" id="dev-title">Desarrollos a medida</h2>
+          </div>
+
+          <div class="sw-dev__grid">
+
+            <!-- Tableros de Control -->
+            <div class="sw-dev__card reveal reveal--delay-1">
+              <div class="sw-dev__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+                  <path d="M8 21h8M12 17v4"/>
+                  <path d="M7 8h4v5H7zM13 10h4v3h-4z"/>
+                </svg>
+              </div>
+              <h3 class="sw-dev__title">Tableros de Control</h3>
+              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
+            </div>
+
+            <!-- Portales Web -->
+            <div class="sw-dev__card reveal reveal--delay-2">
+              <div class="sw-dev__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </div>
+              <h3 class="sw-dev__title">Portales Web</h3>
+              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
+            </div>
+
+            <!-- Aplicaciones móviles -->
+            <div class="sw-dev__card reveal reveal--delay-3">
+              <div class="sw-dev__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <path d="M12 18h.01"/>
+                </svg>
+              </div>
+              <h3 class="sw-dev__title">Aplicaciones móviles</h3>
+              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONOCÉ NUESTRAS APPS
+      ============================================================ -->
+      <section class="section section--sw-alt" id="apps" aria-labelledby="apps-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Ecosistema móvil</span>
+            <h2 class="section__title" id="apps-title">Conocé nuestras Apps</h2>
+          </div>
+
+          <div class="sw-apps__grid">
+
+            <!-- ATP -->
+            <div class="sw-app reveal reveal--delay-1">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#2e7d32,#43a047);">ATP</div>
+              <span class="sw-app__name">ATP</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- TGD -->
+            <div class="sw-app reveal reveal--delay-2">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#00695c,#00897b);">TGD</div>
+              <span class="sw-app__name">TGD</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- PescAR -->
+            <div class="sw-app reveal reveal--delay-3">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#388e3c,#66bb6a);">🐟</div>
+              <span class="sw-app__name">PescAR</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- SIDEM -->
+            <div class="sw-app reveal reveal--delay-4">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#1565c0,#1976d2);">SID</div>
+              <span class="sw-app__name">SIDEM</span>
+              <a href="#" class="sw-app__btn sw-app__btn--consulta">Consulta</a>
+            </div>
+
+            <!-- AlertSeguridad -->
+            <div class="sw-app reveal reveal--delay-1">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#b71c1c,#e53935);">🛡</div>
+              <span class="sw-app__name">AlertSeguridad</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- AlertSalud -->
+            <div class="sw-app reveal reveal--delay-2">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#2e7d32,#43a047);">➕</div>
+              <span class="sw-app__name">AlertSalud</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- AlertApp -->
+            <div class="sw-app reveal reveal--delay-3">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#f57f17,#fb8c00);">🔔</div>
+              <span class="sw-app__name">AlertApp</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- MoveX -->
+            <div class="sw-app reveal reveal--delay-4">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#4a148c,#7b1fa2);">MX</div>
+              <span class="sw-app__name">MoveX</span>
+              <a href="#" class="sw-app__btn sw-app__btn--consulta">Consulta</a>
+            </div>
+
+            <!-- AGENDA GOB -->
+            <div class="sw-app reveal reveal--delay-1">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#00203a,#063565);">AG</div>
+              <span class="sw-app__name">AGENDA GOB</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- SAGA Móvil -->
+            <div class="sw-app reveal reveal--delay-2">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#0277bd,#0288d1);">SG</div>
+              <span class="sw-app__name">SAGA Móvil</span>
+              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
+            </div>
+
+            <!-- Doca Club -->
+            <div class="sw-app reveal reveal--delay-3">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#5059bc,#6872c9);">DC</div>
+              <span class="sw-app__name">Doca Club</span>
+              <a href="#" class="sw-app__btn sw-app__btn--pronto">Próximamente</a>
+            </div>
+
+            <!-- Próximamente -->
+            <div class="sw-app reveal reveal--delay-4">
+              <div class="sw-app__logo" style="background: linear-gradient(135deg,#c62828,#e53935);">💡</div>
+              <span class="sw-app__name">Museo a Cielo Abierto</span>
+              <a href="#" class="sw-app__btn sw-app__btn--pronto">Próximamente</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONTACTO
+      ============================================================ -->
+      <section class="section sw-contact" id="contacto" aria-labelledby="sw-contact-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            <span class="section-label">Contacto</span>
+            <h2 class="section__title" id="sw-contact-title">
+              Completá el formulario
+            </h2>
+            <p class="section__desc">y nos pondremos en contacto</p>
+          </div>
+
+          <!-- Formulario centrado -->
+          <div class="sw-contact__form-wrap reveal reveal--delay-1">
+              <form class="form" id="sw-contact-form" novalidate aria-label="Formulario de contacto Software">
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="sw-name">Nombre y Apellido <abbr title="requerido" aria-hidden="true">*</abbr></label>
+                    <div class="form__input-wrap">
+                      <input class="form__input form__input--icon" type="text" id="sw-name" name="name" placeholder="Tu nombre completo" required aria-required="true" />
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="sw-phone">Teléfono</label>
+                    <div class="form__input-wrap">
+                      <input class="form__input form__input--icon" type="tel" id="sw-phone" name="phone" placeholder="Tu teléfono" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="sw-email">E-mail <abbr title="requerido" aria-hidden="true">*</abbr></label>
+                    <div class="form__input-wrap">
+                      <input class="form__input form__input--icon" type="email" id="sw-email" name="email" placeholder="tu@correo.com" required aria-required="true" />
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="sw-direccion">Dirección</label>
+                    <div class="form__input-wrap">
+                      <input class="form__input form__input--icon" type="text" id="sw-direccion" name="direccion" placeholder="Tu dirección" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <div class="form__field">
+                    <label class="form__label" for="sw-localidad">Localidad</label>
+                    <div class="form__input-wrap">
+                      <input class="form__input form__input--icon" type="text" id="sw-localidad" name="localidad" placeholder="Tu localidad" />
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__label" for="sw-producto">Producto/Servicio</label>
+                    <div class="form__input-wrap">
+                      <select class="form__input" id="sw-producto" name="producto">
+                        <option value="">Seleccionar...</option>
+                        <optgroup label="Sector Privado">
+                          <option value="ssv">SSV — Seguimiento Vehicular</option>
+                          <option value="sgd">SGD — Gestión Documental</option>
+                          <option value="slh">SLH — Liquidación de Haberes</option>
+                          <option value="scp">SCP — Control del Personal</option>
+                          <option value="sgt-priv">SGT — Gestión de Tickets</option>
+                          <option value="erp">ERP — Gestión Administrativo</option>
+                          <option value="svisit">SVISIT — Gestión de Visitantes</option>
+                          <option value="sab">SAB — Expedientes Abogados</option>
+                          <option value="smut">SMUT — Gestión de Multas</option>
+                          <option value="scr">SCR — Gestión de Créditos</option>
+                        </optgroup>
+                        <optgroup label="Sector Público">
+                          <option value="sgt-pub">SGT — Gestión de Trámites</option>
+                          <option value="sgm">SGM — Gestión Municipal</option>
+                          <option value="siga">SIGA — Gestión Administrativos</option>
+                          <option value="scom">SCOM — Compras y Contrataciones</option>
+                          <option value="srrhh">SRRHH — Recursos Humanos</option>
+                          <option value="sbp">SBP — Bienes Patrimoniales</option>
+                          <option value="sie">SIE — Información Educación</option>
+                          <option value="gpo">GPO — Obras Públicas</option>
+                          <option value="sel">SEL — Gestión Electoral</option>
+                          <option value="siv">SIV — Vivienda</option>
+                        </optgroup>
+                        <optgroup label="Desarrollos a medida">
+                          <option value="tablero">Tableros de Control</option>
+                          <option value="portal">Portales Web</option>
+                          <option value="movil">Aplicaciones móviles</option>
+                        </optgroup>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form__field">
+                  <label class="form__label" for="sw-mensaje">Mensaje <abbr title="requerido" aria-hidden="true">*</abbr></label>
+                  <textarea
+                    class="form__textarea"
+                    id="sw-mensaje"
+                    name="message"
+                    placeholder="Contanos sobre tu organización y el sistema que necesitás..."
+                    required
+                    aria-required="true"
+                    minlength="20"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary form__submit" aria-label="Enviar consulta de software">
+                  <span>Enviar</span>
+                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER — idéntico al home
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="u-container">
+        <div class="footer__grid">
+
+          <div class="footer__brand">
+            <a href="index.html" aria-label="ECOM Tecnología y Comunicaciones">
+              <img src="img/ecomsa.png" alt="ECOM Tecnología y Comunicaciones" class="footer__logo-img" />
+            </a>
+            <p class="footer__col-title" style="margin-top: var(--space-7);">CONTACTO:</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5 19.79 19.79 0 0 1 1.07 2.88 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+                <a href="tel:+543624419300" class="footer__contact-link">+54 362 441-9300</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <a href="https://wa.me/5493624810854" class="footer__contact-link">+54 9 362 481-0854</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                <a href="mailto:at.clientes@ecom.com.ar" class="footer__contact-link">at.clientes@ecom.com.ar</a>
+              </li>
+            </ul>
+            <div class="footer__divider"></div>
+            <p class="footer__address">
+              Lunes a Viernes - 6:00 a 20:00 hs<br>
+              Roque Sáenz Peña 352/370<br>
+              Resistencia - Chaco - Argentina
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-title">ACCESOS:</h3>
+            <ul class="footer__links">
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Clientes</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="proveedores.html" class="footer__link">Proveedores</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Personal de ECOM</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Retirados</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-title">INFORMACIÓN:</h3>
+            <ul class="footer__links">
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Planos FO</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Cronograma</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-title footer__col-title--social">Seguinos en redes sociales:</h3>
+            <nav class="footer__social footer__social--plain" aria-label="Redes sociales">
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+            </nav>
+            <div class="footer__divider"></div>
+          </div>
+
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2026 ECOM Todos los derechos reservados.</p>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5493624419300" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="whatsapp-fab__icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </a>
+
+    <!-- ============================================================
+         JAVASCRIPT
+    ============================================================ -->
+    <script src="js/software-canvas.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
