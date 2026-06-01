@@ -1129,6 +1129,12 @@ h6 {
   }
 }
 
+.hero__img--static {
+  width: auto;
+  max-width: 100%;
+  animation: none;
+}
+
 /* Hero — video reemplaza al logo grande */
 .hero__img-wrap--video {
   position: relative;
