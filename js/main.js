@@ -336,10 +336,12 @@
 
     if (!first) {
       slides[prev].classList.remove('is-active');
+      slides[prev].classList.add('is-leaving');
+      setTimeout(() => slides[prev].classList.remove('is-leaving'), 450);
     }
 
     const nextSlide = slides[current];
-    // Esperar que el anterior se desvanezca antes de mostrar el siguiente
+    // Esperar que el anterior suba antes de mostrar el siguiente
     setTimeout(() => {
       nextSlide.classList.add('is-active');
       const valueEl = nextSlide.querySelector('.stat__value[data-target]');

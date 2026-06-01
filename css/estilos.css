@@ -1307,12 +1307,19 @@ h6 {
   justify-content: center;
   padding: var(--space-12) var(--space-6);
   opacity: 0;
+  transform: translateY(55px);
   pointer-events: none;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.42s ease, transform 0.42s ease;
 }
 .stats__slide.is-active {
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
+}
+.stats__slide.is-leaving {
+  opacity: 0;
+  transform: translateY(-55px);
+  transition: opacity 0.42s ease, transform 0.42s ease;
 }
 .stats__slide.stats__item::after {
   display: none;
