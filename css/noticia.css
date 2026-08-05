@@ -27,7 +27,7 @@
 }
 .emp-hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 50svh;
   display: flex;
   align-items: center;
   padding-top: var(--nav-height);
