@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conocé la historia, misión, visión, valores y el equipo de ECOM Chaco — más de 45 años transformando realidades a través de tecnología."
+    />
+    <meta
+      name="keywords"
+      content="ECOM Chaco, empresa, misión, visión, valores, tecnología, comunicaciones, equipo"
+    />
+    <meta name="author" content="Ecom Tecnologia y comunicaciones" />
+    <meta property="og:title" content="ECOM Chaco" />
+    <meta
+      property="og:description"
+      content="Más de 45 años transformando realidades a través de soluciones tecnológicas integrales."
+    />
+    <meta property="og:type" content="website" />
+    <title>ECOM Tecnología y Comunicaciones</title>
+
+    <!-- CSS compartido -->
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- CSS exclusivo de esta página -->
+    <link rel="stylesheet" href="css/seguridad.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ============================================================
+   HERO SLIDE I+D+i
+============================================================ */
+.idi-hero-slide {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  height: 80vh;
+  max-height: 700px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+}
+
+/* Fondo e imagen con tinte azul */
+.idi-hero-slide__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.idi-hero-slide__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.idi-hero-slide__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* Contenedor y diseño del contenido */
+.idi-hero-slide__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.idi-hero-slide__content {
+  max-width: 540px;
+}
+
+/* Etiqueta I+D+i */
+.idi-hero-slide__eyebrow {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Título */
+.idi-hero-slide__title {
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+/* Texto de descripción */
+.idi-hero-slide__desc {
+  font-size: 15px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 28px;
+  font-weight: 400;
+  max-width: 480px;
+}
+
+/* Botón Magenta / Fucsia */
+.idi-hero-slide__btn {
+  display: inline-block;
+  background-color: #e6237a;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(230, 35, 122, 0.3);
+}
+
+.idi-hero-slide__btn:hover {
+  background-color: #d0196a;
+  transform: translateY(-1px);
+}
+
+/* Puntos de navegación del Slider abajo */
+.idi-hero-slide__dots {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+
+.idi-hero-slide__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.idi-hero-slide__dot--active {
+  background-color: #e6237a;
+  transform: scale(1.25);
+}
+
+/* Adaptación responsive */
+@media (max-width: 768px) {
+  .idi-hero-slide {
+    height: auto;
+    min-height: 460px;
+    padding: 80px 0 40px;
+  }
+
+  .idi-hero-slide__title {
+    font-size: 26px;
+  }
+
+  .idi-hero-slide__desc {
+    font-size: 14px;
+  }
+}
+.section__header--center {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+    </style>
+  </head>
+
+  <body>
+    <!-- ============================================================
+         NAV — idéntico al home
+    ============================================================ -->
+    <header class="nav" id="nav" role="banner">
+      <div class="u-container">
+        <nav class="nav__inner" aria-label="Navegación principal">
+
+          <!-- Logos desktop: se alternan según estado del scroll -->
+          <div class="nav__logo-wrap">
+            <a href="index.html" class="nav__logo-scroll" aria-label="ECOM — Inicio">
+              <img src="img/blow.png" alt="ECOM" class="nav__logo-scroll__img" />
+            </a>
+            <a href="index.html" class="nav__logo-initial" aria-label="ECOM — Inicio">
+              <img src="img/ecomsa.png" alt="ECOM" class="nav__logo-initial__img" />
+            </a>
+          </div>
+
+          <!-- Logo: solo visible en móvil, centrado -->
+          <a href="index.html" class="nav__logo-mobile" aria-label="ECOM — Inicio">
+            <img src="img/blow.png" alt="ECOM" class="nav__logo-mobile__img" />
+          </a>
+
+          <!-- Desktop Menu -->
+          <ul class="nav__menu" role="menubar">
+
+            <li role="none">
+              <a href="index.html" class="nav__link" role="menuitem">Inicio</a>
+            </li>
+
+            <li role="none">
+              <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+            </li>
+
+            <!-- Soluciones con desplegable -->
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-soluciones">
+                Soluciones
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-soluciones">
+                <a href="telecomunicaciones.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Telecomunicaciones</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="internet.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Internet satelital</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="software.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Software</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="datacenter.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Datacenter</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="seguridad.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Seguridad</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="idi.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">I+D+i</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+            </li>
+
+            <!-- Accesos con desplegable -->
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-accesos">
+                Accesos
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="proveedores.html" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Proveedores</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Personal de ECOM</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                <a href="#" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Retirados</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+              </div>
+            </li>
+
+            <li role="none">
+              <a href="index.html#precios" class="nav__link" role="menuitem">Subasta</a>
+            </li>
+
+          </ul>
+
+          <!-- Actions: Sumate | (IA) | Contactate -->
+          <div class="nav__actions">
+            <a href="sumate.html" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="#" class="nav__action-avatar" aria-label="Área personal">
+              <span class="nav__action-avatar-initials">IA</span>
+            </a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="index.html#contacto" class="nav__action-link">Contactate</a>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button
+            class="nav__toggle"
+            id="nav-toggle"
+            aria-controls="nav-mobile"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+            <span class="nav__toggle-bar" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav__mobile" id="nav-mobile" aria-hidden="true" role="menu">
+
+        <a href="index.html" class="nav__link" role="menuitem">Inicio</a>
+
+        <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
+
+        <!-- Soluciones mobile -->
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-soluciones">
+          Soluciones
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-soluciones" aria-hidden="true">
+          <a href="telecomunicaciones.html" class="nav__mobile-submenu-item">Telecomunicaciones</a>
+          <a href="internet.html" class="nav__mobile-submenu-item">Internet satelital</a>
+          <a href="software.html" class="nav__mobile-submenu-item">Software</a>
+          <a href="datacenter.html" class="nav__mobile-submenu-item">Datacenter</a>
+          <a href="seguridad.html" class="nav__mobile-submenu-item">Seguridad</a>
+          <a href="idi.html" class="nav__mobile-submenu-item">I+D+i</a>
+        </div>
+
+        <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
+
+        <!-- Accesos mobile -->
+        <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-accesos">
+          Accesos
+          <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
+          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="#" class="nav__mobile-submenu-item">Proveedores</a>
+          <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
+          <a href="#" class="nav__mobile-submenu-item">Retirados</a>
+        </div>
+
+        <a href="index.html#precios" class="nav__link" role="menuitem">Subasta</a>
+
+        <div class="nav__mobile-actions">
+          <div class="nav__mobile-ia-row">
+            <a href="sumate.html" class="nav__action-link">Sumate</a>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <span class="nav__action-ia-text">IA</span>
+            <span class="nav__action-sep" aria-hidden="true"></span>
+            <a href="index.html#contacto" class="nav__action-link">Contactate</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="empresa-inicio">
+      <!-- ============================================================
+           HERO — Somos ECOM
+      ============================================================ -->
+      <section class="idi-hero-slide" aria-label="Innovación y Desarrollo">
+  <!-- Contenedor del Slider -->
+  <div class="idi-slider">
+    
+    <!-- SLIDE 1 (La de la imagen) -->
+    <div class="idi-slide idi-slide--active">
+      <div class="idi-hero-slide__bg">
+        <img src="img/seguridad1.png" alt="I+D+i" class="idi-hero-slide__img" />
+        <div class="idi-hero-slide__overlay"></div>
+      </div>
+      <div class="u-container idi-hero-slide__container">
+        <div class="idi-hero-slide__content">
+          <span class="idi-hero-slide__eyebrow">SEGURIDAD</span>
+          <h1 class="idi-hero-slide__title">Blindamos su activo más valioso:la información.</h1>
+          <p class="idi-hero-slide__desc">Protección avanzada y protocolos de misión crítica
+para garantizar la continuidad operativa y la confianza total en entornos digitales complejos.</p>
+          <div class="idi-hero-slide__actions">
+            <a href="#mision" class="idi-hero-slide__btn">Conocé más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 (Nueva imagen de ejemplo) -->
+    <div class="idi-slide">
+      <div class="idi-hero-slide__bg">
+        <img src="img/seguridad1.png" alt="I+D+i" class="idi-hero-slide__img" />
+        <div class="idi-hero-slide__overlay"></div>
+      </div>
+      <div class="u-container idi-hero-slide__container">
+        <div class="idi-hero-slide__content">
+          <span class="idi-hero-slide__eyebrow">SEGURIDAD</span>
+          <h1 class="idi-hero-slide__title">Blindamos su activo más valioso:la información.</h1>
+          <p class="idi-hero-slide__desc">Protección avanzada y protocolos de misión crítica
+para garantizar la continuidad operativa y la confianza total en entornos digitales complejos.</p>
+          <div class="idi-hero-slide__actions">
+            <a href="#mision" class="idi-hero-slide__btn">Conocé más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agregá más <div class="idi-slide">...</div> según las imágenes que necesites -->
+
+  </div>
+
+  <!-- Puntos de navegación (Se pueden generar manualmente o con JS) -->
+  <div class="idi-hero-slide__dots" id="idi-dots-container"></div>
+</section>
+
+      <!-- ============================================================
+           MISIÓN Y VISIÓN
+      ============================================================ -->
+      <section class="section emp-mv" id="mision" aria-labelledby="mv-title">
+        <div class="u-container">
+          <div class="section__header--center reveal">
+            
+            <h2 class="section__title" id="mv-title">
+              Conocé los diversos servicios que tenemos para ofrecerte
+            </h2>
+          </div>
+
+          
+            <div class="idi-features__grid">
+
+  <!-- Soluciones Mobile -->
+  <div class="idi-feature__item">
+    <div class="idi-feature__icon">
+      <img src="img/camara.svg" alt="" aria-hidden="true" />
+    </div>
+    <h3 class="idi-feature__title">Montaje integral de
+Centros de Monitoreo y cámaras de videovigilancia 
+</h3>
+    <a href="#" class="idi-feature__btn">+ Info</a>
+  </div>
+
+  <!-- Servicio de Chatbot -->
+  <div class="idi-feature__item">
+    <div class="idi-feature__icon">
+      <img src="img/note.svg" alt="" aria-hidden="true" />
+    </div>
+    <h3 class="idi-feature__title">Seguridad informática:
+Auditorias informáticas,
+test y pruebas de seguridad</h3>
+    <a href="#" class="idi-feature__btn">+ Info</a>
+  </div>
+
+  <!-- Inteligencia Artificial -->
+  <div class="idi-feature__item">
+    <div class="idi-feature__icon">
+      <img src="img/usertext.svg" alt="" aria-hidden="true" />
+    </div>
+    <h3 class="idi-feature__title">Asistencia y Consultoría en videovigilancia </h3>
+    
+    <a href="#" class="idi-feature__btn">+ Info</a>
+  </div>
+
+  <!-- Data Science -->
+  <div class="idi-feature__item">
+    <div class="idi-feature__icon">
+      <img src="img/herra.svg" alt="" aria-hidden="true" />
+    </div>
+    <h3 class="idi-feature__title">Asistencia técnica y mantenimiento</h3>
+    
+    <a href="#" class="idi-feature__btn">+ Info</a>
+  </div>
+
+</div>
+            
+          
+        </div>
+      </section>
+      
+<!-- ============================================================
+     BANNER
+============================================================ -->
+<section class="idi-banner" aria-label="Evolución, Integración, Tecnología">
+  <div class="idi-banner__bg">
+    <img src="img/seguridad2.png" alt="" class="idi-banner__img" aria-hidden="true" />
+    <div class="idi-banner__overlay"></div>
+  </div>
+
+  <div class="u-container idi-banner__container">
+    <p class="idi-banner__text">
+      Velocidad <span class="idi-banner__sep">|</span>
+      Confiabilidad <span class="idi-banner__sep">|</span>
+      Integración
+    </p>
+  </div>
+</section>
+<br><br><br>
+
+      
+      
+
+      <!-- ============================================================
+           CTA FINAL
+      ============================================================ -->
+      
+    </main>
+
+    <!-- ============================================================
+         FOOTER — idéntico al home
+    ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="u-container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="index.html" class="nav__logo" aria-label="ECOM Tech">
+              <div class="nav__logo-mark" aria-hidden="true">
+                <img
+                  src="img/ECOM_logo.png"
+                  alt="ECOM Tecnología y Comunicaciones"
+                />
+              </div>
+            </a>
+            <p class="footer__brand-text">Ecom innova, conecta, transforma</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                  />
+                  <polygon
+                    points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <h3 class="footer__col-title">Soluciones</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Ciberseguridad</a></li>
+              <li><a href="#" class="footer__link">Cloud</a></li>
+              <li>
+                <a href="#" class="footer__link">Inteligencia Artificial</a>
+              </li>
+              <li><a href="#" class="footer__link">Analytics</a></li>
+              <li><a href="#" class="footer__link">APIs</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__col-title">Empresa</h3>
+            <ul class="footer__links">
+              <li><a href="empresa.html" class="footer__link">Acerca de</a></li>
+              <li><a href="#" class="footer__link">RSE</a></li>
+              <li><a href="#" class="footer__link">Acceso Interno</a></li>
+              <li><a href="#" class="footer__link">Acceso Externo</a></li>
+              <li><a href="#" class="footer__link">Acceso Retirados</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer__col-title">Clientes</h3>
+            <ul class="footer__links">
+              <li><a href="#" class="footer__link">Proveedores</a></li>
+              <li><a href="#" class="footer__link">Planos FO</a></li>
+              <li><a href="#" class="footer__link">Cronograma</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">© 2026 ECOM Todos los derechos reservados.</p>
+          <nav class="footer__legal" aria-label="Legal">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Cookies</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.idi-slide');
+  const dotsContainer = document.getElementById('idi-dots-container');
+
+  if (!slides.length || !dotsContainer) return;
+
+  let currentIndex = 0;
+  let slideInterval;
+  const autoPlayTime = 5000; // Tiempo en milisegundos (5 segundos)
+
+  // Crear los puntos dinámicamente según la cantidad de slides
+  slides.forEach((_, index) => {
+    const dot = document.createElement('button');
+    dot.classList.add('idi-hero-slide__dot');
+    if (index === 0) dot.classList.add('idi-hero-slide__dot--active');
+    dot.setAttribute('aria-label', `Diapositiva ${index + 1}`);
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll('.idi-hero-slide__dot');
+
+  function goToSlide(index) {
+    slides[currentIndex].classList.remove('idi-slide--active');
+    dots[currentIndex].classList.remove('idi-hero-slide__dot--active');
+
+    currentIndex = index;
+
+    slides[currentIndex].classList.add('idi-slide--active');
+    dots[currentIndex].classList.add('idi-hero-slide__dot--active');
+
+    resetAutoplay();
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentIndex + 1) % slides.length;
+    goToSlide(nextIndex);
+  }
+
+  function startAutoplay() {
+    slideInterval = setInterval(nextSlide, autoPlayTime);
+  }
+
+  function resetAutoplay() {
+    clearInterval(slideInterval);
+    startAutoplay();
+  }
+
+  // Iniciar carrusel automático
+  startAutoplay();
+});
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.idi-feature__item');
+  items.forEach((item) => {
+    item.addEventListener('touchstart', () => {
+      item.classList.add('idi-feature__item--active');
+    }, { passive: true });
+    item.addEventListener('touchend', () => {
+      setTimeout(() => item.classList.remove('idi-feature__item--active'), 300);
+    });
+  });
+});
+    </script>
+  </body>
+</html>

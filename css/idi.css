@@ -2,6 +2,278 @@
    HERO — Somos ECOM
 ============================================================ */
 /* Configuración para sliders y transiciones */
+/* ============================================================
+   Innovando hacia una revolución tecnológica — grid de 4 items
+============================================================ */
+/* ============================================================
+   Soluciones Smart - IOT
+============================================================ */
+
+.idi-smart__panel {
+  background-color: #e6237a;
+  border-radius: 32px;
+  padding: 48px 40px;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.idi-smart__title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+/* ============================================================
+   Banner: Evolución | Integración | Tecnología
+============================================================ */
+.idi-banner {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.idi-banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.idi-banner__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.idi-banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(24, 62, 104, 0.92) 0%,
+    rgba(32, 78, 126, 0.85) 50%,
+    rgba(22, 53, 90, 0.88) 100%
+  );
+  mix-blend-mode: multiply;
+}
+
+.idi-banner__container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.idi-banner__text {
+  color: #ffffff;
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.idi-banner__sep {
+  display: inline-block;
+  margin: 0 18px;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .idi-banner {
+    min-height: 200px;
+    
+  }
+  .idi-banner__text {
+    font-size: 22px;
+  }
+  .idi-banner__sep {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .idi-banner__text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .idi-banner__sep {
+    display: none;
+  }
+}
+.idi-smart__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.idi-smart__card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 24px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.idi-smart__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.idi-smart__card-title {
+  color: #183e68;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.idi-smart__card-btn {
+  display: inline-block;
+  background-color: #e6237a;
+  color: #ffffff;
+  padding: 9px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.idi-smart__card-btn:hover {
+  background-color: #d0196a;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .idi-smart__panel {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+  .idi-smart__title {
+    font-size: 22px;
+  }
+  .idi-smart__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.idi-features__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.idi-feature__item {
+  padding: 40px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Divisores en cruz, igual que en la imagen */
+.idi-feature__item:nth-child(1) {
+  border-right: 1px dashed #c7cdd6;
+  border-bottom: 1px dashed #c7cdd6;
+}
+.idi-feature__item:nth-child(2) {
+  border-bottom: 1px dashed #c7cdd6;
+}
+.idi-feature__item:nth-child(3) {
+  border-right: 1px dashed #c7cdd6;
+}
+
+.idi-feature__icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+  transition: transform 0.35s ease;
+}
+
+.idi-feature__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Pequeño movimiento del ícono al pasar el mouse (desktop) */
+.idi-feature__item:hover .idi-feature__icon,
+.idi-feature__item--active .idi-feature__icon {
+  transform: translateY(-6px) rotate(-4deg) scale(1.08);
+}
+.idi-feature__item:nth-child(even):hover .idi-feature__icon,
+.idi-feature__item:nth-child(even).idi-feature__item--active .idi-feature__icon {
+  transform: translateY(-6px) rotate(4deg) scale(1.08);
+}
+
+.idi-feature__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #183e68;
+  margin-bottom: 12px;
+}
+
+.idi-feature__desc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #183e68;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  max-width: 220px;
+}
+
+.idi-feature__btn {
+  display: inline-block;
+  background-color: #e6237a;
+  color: #ffffff;
+  padding: 9px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: auto;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.idi-feature__btn:hover {
+  background-color: #d0196a;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .idi-features__grid {
+    grid-template-columns: 1fr;
+  }
+  .idi-feature__item {
+    border-right: none !important;
+  }
+  .idi-feature__item:not(:last-child) {
+    border-bottom: 1px dashed #c7cdd6 !important;
+  }
+}
 .idi-slider {
   position: relative;
   width: 100%;
