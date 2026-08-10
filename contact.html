@@ -23,7 +23,7 @@
     <!-- CSS compartido -->
     <link rel="stylesheet" href="css/estilos.css" />
     <!-- CSS exclusivo de esta página -->
-    <link rel="stylesheet" href="css/sumate.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -150,7 +150,7 @@
               <span class="nav__action-avatar-initials">IA</span>
             </a>
             <span class="nav__action-sep" aria-hidden="true"></span>
-            <a href="contact.html" class="nav__action-link">Contactate</a>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
           </div>
 
           <button
@@ -207,7 +207,7 @@
             <span class="nav__action-sep" aria-hidden="true"></span>
             <span class="nav__action-ia-text">IA</span>
             <span class="nav__action-sep" aria-hidden="true"></span>
-            <a href="contact.html" class="nav__action-link">Contactate</a>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
           </div>
         </div>
       </div>
@@ -227,23 +227,13 @@
           <div class="sw-hero__inner">
             <!-- Texto -->
             <div class="sw-hero__content">
-              <div class="">
-                <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-                <h2 style="color: white;">SUMATE</h2>
-              </div>
+             
 
               <h1 class="sw-hero__title" id="sw-hero-title">
-                <span class="sw-hero__title-accent">Impulsá tu carrera.<br>
-                  Transformá tu provincia.</span>
+                <span class="sw-hero__title-accent">Comunicate con nosotros <br> para más información</span>
               </h1>
 
-              <p class="sw-hero__subtitle">
-                En ECOM creemos en el talento local. Acá tenés la
-                oportunidad de trabajar con tecnologías de vanguardia
-                y liderar los proyectos que definen el futuro digital del
-                Chaco. Sumate a un equipo que combina capacidad
-                técnica, innovación y un propósito real.
-              </p>
+             
 
               
             </div>
@@ -253,105 +243,81 @@
           </div>
         </div>
       </section>
-
       <!-- ============================================================
-           STATS
-      ============================================================ -->
-      
+     CONTACTO: Formulario "¿Querés saber más..."
+============================================================ -->
+<section class="sw-contact sw-contact--pink" aria-labelledby="sw-contact-title">
+  <div class="u-container">
+    <div class="sw-contact__header reveal">
+      <h2 class="sw-contact__title" id="sw-contact-title">
+        ¿Querés saber más de nuestros<br>productos y servicios?
+      </h2>
+      <p class="sw-contact__subtitle">
+        Contanos sobre las necesidades tecnológicas que tenés<br>
+        y nuestros especialistas te brindarán información personalizada.
+      </p>
+    </div>
 
-      <!-- ============================================================
-           SECTOR PRIVADO
-      ============================================================ -->
-      <section class="section" id="sector-privado" aria-labelledby="privado-title">
-        <div class="u-container">
-          <div class="section__header--center reveal">
-           
-            <h2 class="section__title" id="privado-title">
-              Formá parte de un equipo que conecta.
-            </h2>
-          </div>
-
-          <div class="sw-cards__grid">
-
-            <!-- SSV -->
-            <article class="sw-card reveal reveal--delay-1">
-              
-              <h1 class="sw-card__title">Desafíos a Gran Escala</h1>
-              <p> Vas a formar parte de la infraestructura más grande
-de la región. Lo que hacés acá impacta directamente
-en la vida de miles de personas del Norte Argentino.</p>
-            </article>
-
-            <!-- SGD -->
-            <article class="sw-card reveal reveal--delay-2">
-              
-              <h1 class="sw-card__title">Ambiente Colaborativo </h1>
-              <p>Fomentamos una cultura basada en el trabajo en equipo,
-donde el profesionalismo, el diálogo colaborativo y la
-vocación de servicio marcan la diferencia. </p>
-            </article>
-
-            <!-- SLH -->
-            
-
-           
-            <!-- SVISIT -->
-            <article class="sw-card reveal reveal--delay-3">
-              
-              <h1 class="sw-card__title">Aprendizaje y Evolución</h1>
-              <p>Promovemos tu crecimiento continuo. Vas a trabajar
-con tecnologías modernas, formación continua y un
-equipo de profesionales de primer nivel.</p>
-            </article>
-
-            
-
-            <!-- SCR -->
-            <article class="sw-card reveal reveal--delay-2">
-              
-              <h1 class="sw-card__title">Solidez y Orgullo Local</h1>
-              <p>Somos pioneros en la región. Combinamos la
-estabilidad de una trayectoria de casi 50 años con la
-agilidad que el futuro exige, impulsando el crecimiento
-tecnológico sostenible desde el Chaco para el país y
-la región</p>
-            </article>
-
-            
-
-          </div>
+    <form class="sw-contact__form-wrap reveal" action="#" method="POST">
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-nombre">Nombre y Apellido</label>
+          <input type="text" id="cf-nombre" name="nombre" required>
         </div>
-      </section>
+        <div class="sw-contact__field">
+          <label for="cf-telefono">Teléfono</label>
+          <input type="tel" id="cf-telefono" name="telefono" required>
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-email">E-mail</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-direccion">Dirección</label>
+          <input type="text" id="cf-direccion" name="direccion">
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-localidad">Localidad</label>
+          <input type="text" id="cf-localidad" name="localidad">
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-producto">Producto/Servicio</label>
+          <select id="cf-producto" name="producto" required>
+            <option value="" selected disabled></option>
+            <option value="internet">Internet</option>
+            <option value="datacenter">Datacenter</option>
+            <option value="telecomunicaciones">Telecomunicaciones</option>
+            <option value="software">Software</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sw-contact__field sw-contact__field--full">
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="5"></textarea>
+      </div>
+
+      <div class="sw-contact__submit-wrap">
+        <button type="submit" class="sw-contact__submit">Solicitar información</button>
+      </div>
+    </form>
+  </div>
+</section>
 
      
-      <section class="sw-banner" aria-label="Valores de la plataforma de software ECOM">
-        <div class="u-container">
-          <p class="sw-banner__text reveal">
-            ¿Listo para el próximo paso?
-          </p>
-          <br><br>
-          <p class="sw-banner__text reveal">
-            Base de talento
-          </p>
-          <br>
-          <p class="sw-banner__text2 reveal">
-            Dejanos tus datos, contanos qué te apasiona hacer
-y sumate a nuestra base de talento
-para futuras búsquedas.
-          </p>
-          <br>
-          <form>
-            <div style="max-width: 200px; margin: 0 auto;">
-            <button type="submit" class="btn btn--primary form__submit" aria-label="Enviar consulta de software">
-                  <span>Iniciar Postulación</span>
-                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-                </div>
-              </form>
-              
-        </div>
-      </section>
+      
 
+     
+
+     
+      
      
       
       
