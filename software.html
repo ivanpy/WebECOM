@@ -12,18 +12,18 @@
       content="software, sistemas, gestión, sector público, sector privado, apps móviles, ECOM, Chaco"
     />
     <meta name="author" content="Ecom Tecnologia y comunicaciones" />
-    <meta property="og:title" content="Software — ECOM Chaco" />
+    <meta property="og:title" content="Sumate — ECOM Chaco" />
     <meta
       property="og:description"
       content="Soluciones de software de vanguardia, integrales, modulares y a medida de tus necesidades."
     />
     <meta property="og:type" content="website" />
-    <title>Software — ECOM Tecnología y Comunicaciones</title>
+    <title>ECOM Tecnología y Comunicaciones</title>
 
     <!-- CSS compartido -->
     <link rel="stylesheet" href="css/estilos.css" />
     <!-- CSS exclusivo de esta página -->
-    <link rel="stylesheet" href="css/software.css" />
+    <link rel="stylesheet" href="css/soft.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,6 +32,44 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .section__header--center {
+    max-width: 1640px;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+.sw-hero__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(230, 35, 122, 0.92) 80%,
+    rgba(230, 35, 126, 0.85) 90%,
+    rgba(230, 53, 90, 0.88) 100%
+  );
+  z-index: 1;
+  background-image: url('./img/cards/SOFTWARE.jpg');
+  background-size: cover;
+  mix-blend-mode:multiply
+  
+}
+.btn--primary {
+  background: #0d4a86;
+  color: var(--color-white);
+  box-shadow: var(--shadow-primary-sm);
+}
+.btn--primary:hover {
+  background:#2a4a6a;
+  box-shadow: var(--shadow-primary);
+  transform: translateY(-1px);
+}
+      /* Estilos específicos para esta página */
+      </style>
   </head>
 
   <body>
@@ -127,6 +165,21 @@
                 </a>
               </div>
             </li>
+            <li class="nav__item--dropdown" role="none">
+              <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-accesos">
+                Mesa de entrada Digital
+                <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
+                <a href="https://mesadeentradadigital.ecom.com.ar/procedure-types/oficio_judicial" class="nav__dropdown-item" role="menuitem">
+                  <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                  <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Oficios</span><span class="nav__dropdown-item-line"></span></span>
+                </a>
+                
+                
+                
+              </div>
+            </li>
 
             <li role="none">
               <a href="index.html#precios" class="nav__link" role="menuitem">Subasta</a>
@@ -207,7 +260,7 @@
     <main id="software-inicio">
 
       <!-- ============================================================
-           HERO — Animación canvas + texto de la imagen de referencia
+           HERO — 
       ============================================================ -->
       <section class="sw-hero" aria-labelledby="sw-hero-title">
         <!-- Canvas: solo objetos animados, sin texto -->
@@ -218,51 +271,30 @@
           <div class="sw-hero__inner">
             <!-- Texto -->
             <div class="sw-hero__content">
-              <div class="hero__eyebrow">
+              <div class="">
                 <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-                SOLUCIONES TECNOLÓGICAS
+                <h2 style="color: white;">SOFTWARE</h2>
               </div>
 
               <h1 class="sw-hero__title" id="sw-hero-title">
-                <span class="sw-hero__title-accent">Software</span>
+                <span class="sw-hero__title-accent">Creamos herramientas  <br>inteligentes para <br>decisiones estratégicas</span>
               </h1>
 
               <p class="sw-hero__subtitle">
-                Soluciones de vanguardia, integrales, modulares y a medida de tus necesidades.
+                Desarrollamos soluciones digitales a medida, que optimizan la gestión pública y potencian la rentabilidad mediante la automatización.
               </p>
 
-              <div class="hero__actions">
+             <div class="hero__actions">
                 <a href="#sector-privado" class="btn btn--primary btn--lg">
-                  Ver soluciones
-                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  Conoce más
+                  
                 </a>
-                <a href="#contacto" class="btn btn--outline btn--lg" style="color:rgba(255,255,255,0.85);border-color:rgba(255,255,255,0.35);">
-                  Contactanos
-                </a>
+                
               </div>
             </div>
 
-            <!-- Panel visual decorativo (solo CSS, sin texto) -->
-            <div class="sw-hero__visual" aria-hidden="true">
-              <div class="sw-hero__panel">
-                <div class="sw-hero__panel-dots">
-                  <span class="sw-hero__panel-dot"></span>
-                  <span class="sw-hero__panel-dot"></span>
-                  <span class="sw-hero__panel-dot"></span>
-                </div>
-                <div class="sw-hero__panel-bar"></div>
-                <div class="sw-hero__panel-bar"></div>
-                <div class="sw-hero__panel-bar"></div>
-                <div class="sw-hero__panel-bar"></div>
-                <div class="sw-hero__panel-bar"></div>
-                <div class="sw-hero__panel-grid">
-                  <div class="sw-hero__panel-chip"></div>
-                  <div class="sw-hero__panel-chip"></div>
-                  <div class="sw-hero__panel-chip"></div>
-                  <div class="sw-hero__panel-chip"></div>
-                </div>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </section>
@@ -270,20 +302,20 @@
       <!-- ============================================================
            STATS
       ============================================================ -->
-      <section class="section sw-stats" id="estadisticas" aria-label="Estadísticas de software ECOM">
+      <section class="sw-stats reveal">
         <div class="u-container">
           <div class="sw-stats__grid">
-            <div class="sw-stat reveal">
-              <div class="sw-stat__value">+300</div>
-              <div class="sw-stat__label">Sistemas Activos</div>
+            <div class="sw-stat">
+              <div class="sw-stat__value">+230</div>
+              <div class="sw-stat__label">Sistemas<br>Activos</div>
             </div>
-            <div class="sw-stat reveal reveal--delay-1">
-              <div class="sw-stat__value">+30</div>
-              <div class="sw-stat__label">Sistemas Nuevos</div>
+            <div class="sw-stat">
+              <div class="sw-stat__value">+40</div>
+              <div class="sw-stat__label">Proyectos de Software<br>en desarrollo</div>
             </div>
-            <div class="sw-stat reveal reveal--delay-2">
-              <div class="sw-stat__value">+20</div>
-              <div class="sw-stat__label">Apps Móviles</div>
+            <div class="sw-stat">
+              <div class="sw-stat__value">+15</div>
+              <div class="sw-stat__label">Soluciones IA<br>en producción</div>
             </div>
           </div>
         </div>
@@ -292,523 +324,273 @@
       <!-- ============================================================
            SECTOR PRIVADO
       ============================================================ -->
-      <section class="section" id="sector-privado" aria-labelledby="privado-title">
+      <section id="sector-privado" class="section section--sw-alt">
         <div class="u-container">
-          <div class="section__header--center reveal">
-            <span class="section-label">Sector Privado</span>
-            <h2 class="section__title" id="privado-title">
-              Conocé los sistemas de software que tenemos para ofrecerte
-            </h2>
+          <div class="sw-section-header reveal">
+            <h2 class="sw-section-header__title">Sector Privado</h2>
+            <p class="sw-section-header__subtitle">Conocé los sistemas de software que tenemos para ofrecerte</p>
           </div>
 
           <div class="sw-cards__grid">
-
-            <!-- SSV -->
-            <article class="sw-card reveal reveal--delay-1">
-              <div class="sw-card__badge">SSV</div>
-              <h3 class="sw-card__title">Sistema de Seguimiento Vehicular</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SSV">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal">
+              <h3 class="sw-card__title">SSV</h3>
+              <p class="sw-card__desc">Sistema de Seguimiento Vehicular</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SGD -->
-            <article class="sw-card reveal reveal--delay-2">
-              <div class="sw-card__badge">SGD</div>
-              <h3 class="sw-card__title">Sistema de Gestión Documental</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGD">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-1">
+              <h3 class="sw-card__title">SGD</h3>
+              <p class="sw-card__desc">Sistema de Gestión Documental</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SLH -->
-            <article class="sw-card reveal reveal--delay-3">
-              <div class="sw-card__badge">SLH</div>
-              <h3 class="sw-card__title">Sistema de Liquidación de Haberes</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SLH">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-2">
+              <h3 class="sw-card__title">SLH</h3>
+              <p class="sw-card__desc">Sistema de Liquidación de Haberes</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SCP -->
-            <article class="sw-card reveal reveal--delay-4">
-              <div class="sw-card__badge">SCP</div>
-              <h3 class="sw-card__title">Sistema de Control Seguimiento y Gestión del Personal</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCP">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-3">
+              <h3 class="sw-card__title">SCP</h3>
+              <p class="sw-card__desc">Sistemas de Control de ingreso y egreso del Personal</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SGT -->
-            <article class="sw-card reveal reveal--delay-1">
-              <div class="sw-card__badge">SGT</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Tickets</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGT">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal">
+              <h3 class="sw-card__title">SGT</h3>
+              <p class="sw-card__desc">Sistema de Gestión de Tickets</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- ERP -->
-            <article class="sw-card reveal reveal--delay-2">
-              <div class="sw-card__badge">ERP</div>
-              <h3 class="sw-card__title">Sistema de Gestión Administrativo</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre ERP">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-1">
+              <h3 class="sw-card__title">ERP</h3>
+              <p class="sw-card__desc">Sistema de Gestión Administrativa</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SVISIT -->
-            <article class="sw-card reveal reveal--delay-3">
-              <div class="sw-card__badge">SVISIT</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Visitantes</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SVISIT">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-2">
+              <h3 class="sw-card__title">SVISIT</h3>
+              <p class="sw-card__desc">Sistema de Gestión de Visitantes</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SAB -->
-            <article class="sw-card reveal reveal--delay-4">
-              <div class="sw-card__badge">SAB</div>
-              <h3 class="sw-card__title">Sistema de Gestión y seguimiento de expedientes para Abogados</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SAB">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal reveal--delay-3">
+              <h3 class="sw-card__title">SAB</h3>
+              <p class="sw-card__desc">Sistema de Gestión y seguimiento de expedientes para Abogados</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SMUT -->
-            <article class="sw-card reveal reveal--delay-1">
-              <div class="sw-card__badge">SMUT</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Multas</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SMUT">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark reveal">
+              <h3 class="sw-card__title">SUME</h3>
+              <p class="sw-card__desc">Sistema Único de Mutuales y Entidades</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
-
-            <!-- SCR -->
-            <article class="sw-card reveal reveal--delay-2">
-              <div class="sw-card__badge">SCR</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Créditos</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCR">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </article>
-
-            <!-- Club de Descuentos (Próximamente) -->
-            <article class="sw-card sw-card--coming reveal reveal--delay-3">
-              <div class="sw-card__badge">Club de Descuentos</div>
-              <h3 class="sw-card__title" style="color:var(--color-text-muted);">¡Próximamente!</h3>
-              <span class="sw-card__soon" aria-label="Próximamente disponible">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                Próximamente
-              </span>
-            </article>
-
           </div>
         </div>
       </section>
-
       <!-- ============================================================
-           SECTOR PÚBLICO
-      ============================================================ -->
-      <section class="section section--sw-alt" id="sector-publico" aria-labelledby="publico-title">
+           SECTOR PUBL
+      ============================================S================ -->
+      <section id="sector-privado" class="section section--sw-alt">
         <div class="u-container">
-          <div class="section__header--center reveal">
-            <span class="section-label">Sector Público</span>
-            <h2 class="section__title" id="publico-title">
-              Conocé los sistemas de software que tenemos para ofrecerte
-            </h2>
+          <div class="sw-section-header reveal">
+            <h2 class="sw-section-header__title">Sector Público</h2>
+            <p class="sw-section-header__subtitle">Conocé los sistemas de software que tenemos para ofrecerte</p>
           </div>
 
           <div class="sw-cards__grid">
-
-            <!-- SGT público -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-1">
-              <div class="sw-card__badge">SGT</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Trámites</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGT">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">SGT</h3>
+              <p class="sw-card__desc">Sistema de Gestión de Trámites</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SGM -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-2">
-              <div class="sw-card__badge">SGM</div>
-              <h3 class="sw-card__title">Sistema de Gestión Municipal</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SGM">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-1">
+              <h3 class="sw-card__title">SGM</h3>
+              <p class="sw-card__desc">Sistema de Gestión Municipal</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SIGA -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-3">
-              <div class="sw-card__badge">SIGA</div>
-              <h3 class="sw-card__title">Sistema de Gestión Administrativos</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIGA">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-2">
+              <h3 class="sw-card__title">SCOM</h3>
+              <p class="sw-card__desc">Sistema de Compras y Contrataciones</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SCOM -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-4">
-              <div class="sw-card__badge">SCOM</div>
-              <h3 class="sw-card__title">Sistema de Compras y Contrataciones</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SCOM">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-3">
+              <h3 class="sw-card__title">SRRHH</h3>
+              <p class="sw-card__desc">Sistema Integrado de RRHH</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SRRHH -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-1">
-              <div class="sw-card__badge">SRRHH</div>
-              <h3 class="sw-card__title">Sistema de Recursos Humanos</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SRRHH">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">SBP</h3>
+              <p class="sw-card__desc">Sistema de Bienes Patrimoniales</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SBP -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-2">
-              <div class="sw-card__badge">SBP</div>
-              <h3 class="sw-card__title">Sistema de Bienes Patrimoniales</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SBP">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-1">
+              <h3 class="sw-card__title">SIE</h3>
+              <p class="sw-card__desc">Sistema de Información de Educación</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SIE -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-3">
-              <div class="sw-card__badge">SIE</div>
-              <h3 class="sw-card__title">Sistema de Información de Educación</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIE">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-2">
+              <h3 class="sw-card__title">SSL</h3>
+              <p class="sw-card__desc">Sistema de Subastas y Licitaciones</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- GPO -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-4">
-              <div class="sw-card__badge">GPO</div>
-              <h3 class="sw-card__title">Sistema de Gestión de Obras Públicas</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre GPO">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal reveal--delay-3">
+              <h3 class="sw-card__title">SAB</h3>
+              <p class="sw-card__desc">Sistema de Gestión y seguimiento de expedientes para Abogados</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SEL -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-1">
-              <div class="sw-card__badge">SEL</div>
-              <h3 class="sw-card__title">Sistema de Gestión Electoral</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SEL">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">SEL</h3>
+              <p class="sw-card__desc">Sistema de Gestión Electoral</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
-            <!-- SIV -->
-            <article class="sw-card sw-card--publico reveal reveal--delay-2">
-              <div class="sw-card__badge">SIV</div>
-              <h3 class="sw-card__title">Sistema Integrado de Vivienda</h3>
-              <a href="#contacto" class="sw-card__link" aria-label="Conocer más sobre SIV">
-                + Info
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">SIV</h3>
+              <p class="sw-card__desc">Sistema Integrado de Gestión de Viviendas</p>
+              <a href="#" class="sw-card__link">+info</a>
             </article>
 
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">SGPI</h3>
+              <p class="sw-card__desc">Sistema de Gestión de la Propiedad Inmueble</p>
+              <a href="#" class="sw-card__link">+info</a>
+            </article>
+
+            <article class="sw-card sw-card--dark2 reveal">
+              <h3 class="sw-card__title">Agenda de Gobierno</h3>
+              
+              <a href="#" class="sw-card__link">+info</a>
+            </article>
+
+          
           </div>
         </div>
       </section>
 
-      <!-- ============================================================
-           BANNER — Innovación | Agilidad | Evolución
-      ============================================================ -->
-      <section class="sw-banner" aria-label="Valores de la plataforma de software ECOM">
-        <div class="u-container">
-          <p class="sw-banner__text reveal">
-            Innovación <span>|</span> Agilidad <span>|</span> Evolución
-          </p>
-        </div>
-      </section>
+
+<section class="idi-banner" aria-label="Evolución, Integración, Tecnología">
+  <div class="idi-banner__bg">
+    <img src="img/cards/TELECOMUNICACIONES.jpg" alt="" class="idi-banner__img" aria-hidden="true" />
+    <div class="idi-banner__overlay"></div>
+  </div>
+
+  <div class="u-container idi-banner__container">
+    <p class="idi-banner__text">
+      Innovación <span class="idi-banner__sep">|</span>
+      Agilidad <span class="idi-banner__sep">|</span>
+      Evolución <span class="idi-banner__sep">|</span>
+    </p>
+  </div>
+</section>
 
       <!-- ============================================================
            DESARROLLOS A MEDIDA
       ============================================================ -->
-      <section class="section" id="desarrollos" aria-labelledby="dev-title">
+      <section class="section">
         <div class="u-container">
-          <div class="section__header--center reveal">
-            <span class="section-label">Personalizados</span>
-            <h2 class="section__title" id="dev-title">Desarrollos a medida</h2>
+          <div class="sw-section-header reveal">
+            <h2 class="sw-section-header__title">Desarrollos a medida</h2>
           </div>
 
-          <div class="sw-dev__grid">
+          <div class="dev-cards__grid">
+            <article class="dev-card reveal">
+              <div class="dev-card__icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/>
+                  <path d="M13 13l6 6"/>
+                </svg>
+              </div>
+              <h3 class="dev-card__title">Tableros<br>de Control</h3>
+              <a href="#" class="dev-card__btn">Contratá</a>
+            </article>
 
-            <!-- Tableros de Control -->
-            <div class="sw-dev__card reveal reveal--delay-1">
-              <div class="sw-dev__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <article class="dev-card reveal reveal--delay-1">
+              <div class="dev-card__icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="13" rx="2"/>
                   <path d="M8 21h8M12 17v4"/>
-                  <path d="M7 8h4v5H7zM13 10h4v3h-4z"/>
+                  <path d="M12.5 9.5l4 3.6-1.6.3-.6 1.6-1.8-5.5z"/>
                 </svg>
               </div>
-              <h3 class="sw-dev__title">Tableros de Control</h3>
-              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
-            </div>
+              <h3 class="dev-card__title">Portales<br>Web</h3>
+              <a href="#" class="dev-card__btn">Contratá</a>
+            </article>
 
-            <!-- Portales Web -->
-            <div class="sw-dev__card reveal reveal--delay-2">
-              <div class="sw-dev__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            <article class="dev-card reveal reveal--delay-2">
+              <div class="dev-card__icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="7" y="2" width="10" height="20" rx="2"/>
+                  <path d="M11 18h2"/>
                 </svg>
               </div>
-              <h3 class="sw-dev__title">Portales Web</h3>
-              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
-            </div>
-
-            <!-- Aplicaciones móviles -->
-            <div class="sw-dev__card reveal reveal--delay-3">
-              <div class="sw-dev__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                  <path d="M12 18h.01"/>
-                </svg>
-              </div>
-              <h3 class="sw-dev__title">Aplicaciones móviles</h3>
-              <a href="#contacto" class="btn btn--primary btn--sm">Conocé</a>
-            </div>
-
+              <h3 class="dev-card__title">Aplicaciones<br>móviles</h3>
+              <a href="#" class="dev-card__btn">Contratá</a>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- ============================================================
-           CONOCÉ NUESTRAS APPS
+           CONOCÉ ALGUNAS DE NUESTRAS APPS
       ============================================================ -->
-      <section class="section section--sw-alt" id="apps" aria-labelledby="apps-title">
+      <section class="apps-section">
         <div class="u-container">
-          <div class="section__header--center reveal">
-            <span class="section-label">Ecosistema móvil</span>
-            <h2 class="section__title" id="apps-title">Conocé nuestras Apps</h2>
-          </div>
+          <h2 class="apps-section__title">Conocé algunas de nuestras Apps</h2>
 
-          <div class="sw-apps__grid">
+          <div class="apps-cards__grid">
+            <article class="app-card reveal">
+              <div class="app-card__media">
+                <img src="img/atp.png" alt="ATP — Administración Tributaria Provincial Chaco">
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
 
-            <!-- ATP -->
-            <div class="sw-app reveal reveal--delay-1">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#2e7d32,#43a047);">ATP</div>
-              <span class="sw-app__name">ATP</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
+            <article class="app-card reveal reveal--delay-1">
+              <div class="app-card__media">
+                <img src="img/tgd.png" alt="TGD — Tu Gobierno Digital">
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
 
-            <!-- TGD -->
-            <div class="sw-app reveal reveal--delay-2">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#00695c,#00897b);">TGD</div>
-              <span class="sw-app__name">TGD</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
+            <article class="app-card reveal reveal--delay-2">
+              <div class="app-card__media">
+                <img src="img/saga.png" alt="SAGA Móvil">
+                <h3 class="app-card__name">SAGA Móvil</h3>
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
 
-            <!-- PescAR -->
-            <div class="sw-app reveal reveal--delay-3">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#388e3c,#66bb6a);">🐟</div>
-              <span class="sw-app__name">PescAR</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
+            <article class="app-card reveal">
+              <div class="app-card__media">
+                <img src="img/sem.png" alt="SEM">
+                
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
 
-            <!-- SIDEM -->
-            <div class="sw-app reveal reveal--delay-4">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#1565c0,#1976d2);">SID</div>
-              <span class="sw-app__name">SIDEM</span>
-              <a href="#" class="sw-app__btn sw-app__btn--consulta">Consulta</a>
-            </div>
+            <article class="app-card reveal reveal--delay-1">
+              <div class="app-card__media">
+                <img src="img/juego.png" alt="Programa Juego Responsable — Sistema Chaqueño de Autoexcluidos">
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
 
-            <!-- AlertSeguridad -->
-            <div class="sw-app reveal reveal--delay-1">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#b71c1c,#e53935);">🛡</div>
-              <span class="sw-app__name">AlertSeguridad</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
-
-            <!-- AlertSalud -->
-            <div class="sw-app reveal reveal--delay-2">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#2e7d32,#43a047);">➕</div>
-              <span class="sw-app__name">AlertSalud</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
-
-            <!-- AlertApp -->
-            <div class="sw-app reveal reveal--delay-3">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#f57f17,#fb8c00);">🔔</div>
-              <span class="sw-app__name">AlertApp</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
-
-            <!-- MoveX -->
-            <div class="sw-app reveal reveal--delay-4">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#4a148c,#7b1fa2);">MX</div>
-              <span class="sw-app__name">MoveX</span>
-              <a href="#" class="sw-app__btn sw-app__btn--consulta">Consulta</a>
-            </div>
-
-            <!-- AGENDA GOB -->
-            <div class="sw-app reveal reveal--delay-1">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#00203a,#063565);">AG</div>
-              <span class="sw-app__name">AGENDA GOB</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
-
-            <!-- SAGA Móvil -->
-            <div class="sw-app reveal reveal--delay-2">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#0277bd,#0288d1);">SG</div>
-              <span class="sw-app__name">SAGA Móvil</span>
-              <a href="#" class="sw-app__btn sw-app__btn--descarga">Descarga</a>
-            </div>
-
-            <!-- Doca Club -->
-            <div class="sw-app reveal reveal--delay-3">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#5059bc,#6872c9);">DC</div>
-              <span class="sw-app__name">Doca Club</span>
-              <a href="#" class="sw-app__btn sw-app__btn--pronto">Próximamente</a>
-            </div>
-
-            <!-- Próximamente -->
-            <div class="sw-app reveal reveal--delay-4">
-              <div class="sw-app__logo" style="background: linear-gradient(135deg,#c62828,#e53935);">💡</div>
-              <span class="sw-app__name">Museo a Cielo Abierto</span>
-              <a href="#" class="sw-app__btn sw-app__btn--pronto">Próximamente</a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================================================
-           CONTACTO
-      ============================================================ -->
-      <section class="section sw-contact" id="contacto" aria-labelledby="sw-contact-title">
-        <div class="u-container">
-          <div class="section__header--center reveal">
-            <span class="section-label">Contacto</span>
-            <h2 class="section__title" id="sw-contact-title">
-              Completá el formulario
-            </h2>
-            <p class="section__desc">y nos pondremos en contacto</p>
-          </div>
-
-          <!-- Formulario centrado -->
-          <div class="sw-contact__form-wrap reveal reveal--delay-1">
-              <form class="form" id="sw-contact-form" novalidate aria-label="Formulario de contacto Software">
-                <div class="form__row">
-                  <div class="form__field">
-                    <label class="form__label" for="sw-name">Nombre y Apellido <abbr title="requerido" aria-hidden="true">*</abbr></label>
-                    <div class="form__input-wrap">
-                      <input class="form__input form__input--icon" type="text" id="sw-name" name="name" placeholder="Tu nombre completo" required aria-required="true" />
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="sw-phone">Teléfono</label>
-                    <div class="form__input-wrap">
-                      <input class="form__input form__input--icon" type="tel" id="sw-phone" name="phone" placeholder="Tu teléfono" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form__row">
-                  <div class="form__field">
-                    <label class="form__label" for="sw-email">E-mail <abbr title="requerido" aria-hidden="true">*</abbr></label>
-                    <div class="form__input-wrap">
-                      <input class="form__input form__input--icon" type="email" id="sw-email" name="email" placeholder="tu@correo.com" required aria-required="true" />
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="sw-direccion">Dirección</label>
-                    <div class="form__input-wrap">
-                      <input class="form__input form__input--icon" type="text" id="sw-direccion" name="direccion" placeholder="Tu dirección" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form__row">
-                  <div class="form__field">
-                    <label class="form__label" for="sw-localidad">Localidad</label>
-                    <div class="form__input-wrap">
-                      <input class="form__input form__input--icon" type="text" id="sw-localidad" name="localidad" placeholder="Tu localidad" />
-                    </div>
-                  </div>
-                  <div class="form__field">
-                    <label class="form__label" for="sw-producto">Producto/Servicio</label>
-                    <div class="form__input-wrap">
-                      <select class="form__input" id="sw-producto" name="producto">
-                        <option value="">Seleccionar...</option>
-                        <optgroup label="Sector Privado">
-                          <option value="ssv">SSV — Seguimiento Vehicular</option>
-                          <option value="sgd">SGD — Gestión Documental</option>
-                          <option value="slh">SLH — Liquidación de Haberes</option>
-                          <option value="scp">SCP — Control del Personal</option>
-                          <option value="sgt-priv">SGT — Gestión de Tickets</option>
-                          <option value="erp">ERP — Gestión Administrativo</option>
-                          <option value="svisit">SVISIT — Gestión de Visitantes</option>
-                          <option value="sab">SAB — Expedientes Abogados</option>
-                          <option value="smut">SMUT — Gestión de Multas</option>
-                          <option value="scr">SCR — Gestión de Créditos</option>
-                        </optgroup>
-                        <optgroup label="Sector Público">
-                          <option value="sgt-pub">SGT — Gestión de Trámites</option>
-                          <option value="sgm">SGM — Gestión Municipal</option>
-                          <option value="siga">SIGA — Gestión Administrativos</option>
-                          <option value="scom">SCOM — Compras y Contrataciones</option>
-                          <option value="srrhh">SRRHH — Recursos Humanos</option>
-                          <option value="sbp">SBP — Bienes Patrimoniales</option>
-                          <option value="sie">SIE — Información Educación</option>
-                          <option value="gpo">GPO — Obras Públicas</option>
-                          <option value="sel">SEL — Gestión Electoral</option>
-                          <option value="siv">SIV — Vivienda</option>
-                        </optgroup>
-                        <optgroup label="Desarrollos a medida">
-                          <option value="tablero">Tableros de Control</option>
-                          <option value="portal">Portales Web</option>
-                          <option value="movil">Aplicaciones móviles</option>
-                        </optgroup>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form__field">
-                  <label class="form__label" for="sw-mensaje">Mensaje <abbr title="requerido" aria-hidden="true">*</abbr></label>
-                  <textarea
-                    class="form__textarea"
-                    id="sw-mensaje"
-                    name="message"
-                    placeholder="Contanos sobre tu organización y el sistema que necesitás..."
-                    required
-                    aria-required="true"
-                    minlength="20"
-                  ></textarea>
-                </div>
-
-                <button type="submit" class="btn btn--primary form__submit" aria-label="Enviar consulta de software">
-                  <span>Enviar</span>
-                  <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </button>
-              </form>
+            <article class="app-card reveal reveal--delay-2">
+              <div class="app-card__media">
+                <img src="img/punto.png" alt="Punto RES — Descubrí lo mejor de Resistencia">
+              </div>
+              <a href="#" class="app-card__btn">Ingresar</a>
+            </article>
           </div>
         </div>
       </section>
