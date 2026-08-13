@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Acceso y atencion a proveedores de ECOM Chaco"
+      content="Soluciones de software de vanguardia, integrales, modulares y a medida — ECOM Tecnología y Comunicaciones."
     />
-    <meta name="keywords" content="ECOM Chaco, empresa, proveedores" />
+    <meta
+      name="keywords"
+      content="software, sistemas, gestión, sector público, sector privado, apps móviles, ECOM, Chaco"
+    />
     <meta name="author" content="Ecom Tecnologia y comunicaciones" />
-    <meta property="og:title" content="Proveedores — ECOM Chaco" />
+    <meta property="og:title" content="Sumate — ECOM Chaco" />
     <meta
       property="og:description"
-      content="Acceso a portal proveedores de ECOM Chaco"
+      content="Soluciones de software de vanguardia, integrales, modulares y a medida de tus necesidades."
     />
     <meta property="og:type" content="website" />
-    <title>Empresa — ECOM Tecnología y Comunicaciones</title>
+    <title>ECOM Tecnología y Comunicaciones</title>
 
     <!-- CSS compartido -->
     <link rel="stylesheet" href="css/estilos.css" />
     <!-- CSS exclusivo de esta página -->
-    <link rel="stylesheet" href="css/empresa.css" />
+    <link rel="stylesheet" href="css/prove.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,11 +32,20 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .section__header--center {
+    max-width: 1640px;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+      /* Estilos específicos para esta página */
+      </style>
   </head>
 
   <body>
     <!-- ============================================================
-         NAV — idéntico al home
+         NAV — idéntico al resto del sitio
     ============================================================ -->
     <header class="nav" id="nav" role="banner">
       <div class="u-container">
@@ -49,12 +61,10 @@
             </a>
           </div>
 
-          <!-- Logo: solo visible en móvil, centrado -->
           <a href="index.html" class="nav__logo-mobile" aria-label="ECOM — Inicio">
             <img src="img/blow.png" alt="ECOM" class="nav__logo-mobile__img" />
           </a>
 
-          <!-- Desktop Menu -->
           <ul class="nav__menu" role="menubar">
 
             <li role="none">
@@ -65,7 +75,6 @@
               <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
             </li>
 
-            <!-- Soluciones con desplegable -->
             <li class="nav__item--dropdown" role="none">
               <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-soluciones">
                 Soluciones
@@ -80,7 +89,7 @@
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Internet satelital</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
-                <a href="software.html" class="nav__dropdown-item" role="menuitem">
+                <a href="software.html" class="nav__dropdown-item nav__dropdown-item--active" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Software</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -103,14 +112,13 @@
               <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
             </li>
 
-            <!-- Accesos con desplegable -->
             <li class="nav__item--dropdown" role="none">
               <button class="nav__link nav__dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem" id="dropdown-accesos">
                 Accesos
                 <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="clientes.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -150,7 +158,6 @@
 
           </ul>
 
-          <!-- Actions: Sumate | (IA) | Contactate -->
           <div class="nav__actions">
             <a href="sumate.html" class="nav__action-link">Sumate</a>
             <span class="nav__action-sep" aria-hidden="true"></span>
@@ -158,10 +165,9 @@
               <span class="nav__action-avatar-initials">IA</span>
             </a>
             <span class="nav__action-sep" aria-hidden="true"></span>
-            <a href="contact.html" class="nav__action-link">Contactate</a>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
           </div>
 
-          <!-- Mobile toggle -->
           <button
             class="nav__toggle"
             id="nav-toggle"
@@ -178,12 +184,10 @@
 
       <!-- Mobile Menu -->
       <div class="nav__mobile" id="nav-mobile" aria-hidden="true" role="menu">
-
         <a href="index.html" class="nav__link" role="menuitem">Inicio</a>
 
         <a href="empresa.html" class="nav__link" role="menuitem">Nosotros</a>
 
-        <!-- Soluciones mobile -->
         <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-soluciones">
           Soluciones
           <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
@@ -199,14 +203,13 @@
 
         <a href="#" class="nav__link" role="menuitem">Nuestros Clientes</a>
 
-        <!-- Accesos mobile -->
         <button class="nav__link nav__mobile-dropdown-toggle" aria-expanded="false" data-target="mobile-accesos">
           Accesos
           <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
-          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
-          <a href="#" class="nav__mobile-submenu-item">Proveedores</a>
+          <a href="clientes.html" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="proveedores.html" class="nav__mobile-submenu-item">Proveedores</a>
           <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
           <a href="#" class="nav__mobile-submenu-item">Retirados</a>
         </div>
@@ -215,241 +218,153 @@
 
         <div class="nav__mobile-actions">
           <div class="nav__mobile-ia-row">
-            <a href="#" class="nav__action-link">Sumate</a>
+            <a href="sumate.html" class="nav__action-link">Sumate</a>
             <span class="nav__action-sep" aria-hidden="true"></span>
             <span class="nav__action-ia-text">IA</span>
             <span class="nav__action-sep" aria-hidden="true"></span>
-            <a href="contact.html" class="nav__action-link">Contactate</a>
+            <a href="#contacto" class="nav__action-link">Contactate</a>
           </div>
         </div>
       </div>
     </header>
 
-    <main id="empresa-inicio">
+    <main id="software-inicio">
+
       <!-- ============================================================
-           HERO — Somos ECOM
+           HERO — Animación canvas + texto de la imagen de referencia
       ============================================================ -->
-      <section class="emp-hero" aria-labelledby="emp-hero-title">
-        <div class="emp-hero__bg" aria-hidden="true">
-          <div class="emp-hero__grid"></div>
-          <div class="emp-hero__blob emp-hero__blob--1"></div>
-          <div class="emp-hero__blob emp-hero__blob--2"></div>
-        </div>
+      <section class="sw-hero" aria-labelledby="sw-hero-title">
+        <!-- Canvas: solo objetos animados, sin texto -->
+        <canvas id="sw-canvas" class="sw-hero__canvas" aria-hidden="true"></canvas>
+        <div class="sw-hero__overlay" aria-hidden="true"></div>
 
         <div class="u-container">
-          <div class="emp-hero__inner">
+          <div class="sw-hero__inner">
             <!-- Texto -->
-            <div class="emp-hero__content">
-              <div class="hero__eyebrow">
-                <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-                ACCESO PROVEEDORES
-              </div>
+            <div class="sw-hero__content">
+             
 
-              <h1 class="emp-hero__title" id="emp-hero-title">
-                Presentación de<br />
-                <span class="hero__title-accent">Facturas</span>
+              <h1 class="sw-hero__title" id="sw-hero-title">
+                <span class="sw-hero__title-accent">Presentación <br>de facturas</span>
               </h1>
 
-              <p class="emp-hero__subtitle">
-                Estimado proveedor para presentar sus facturas acceda aqui. Si
-                no tenés usuario/contraseña o tenés problemas de acceso:
-                Comunícate con nosotros!
-              </p>
+             
 
-              <div class="hero__actions">
-                <a href="#mision" class="btn btn--primary btn--lg">
-                  Presentar Facturas
-                  <svg
-                    class="btn__icon btn__icon--arrow"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a href="index.html#contacto" class="btn btn--outline btn--lg"
-                  >Contactanos</a
-                >
-              </div>
+              
             </div>
 
-            <!-- Imagen institucional -->
-            <div class="emp-hero__visual">
-              <div class="emp-hero__img-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Equipo de ECOM Chaco trabajando en instalaciones tecnológicas"
-                  class="emp-hero__img"
-                  width="600"
-                  height="480"
-                  loading="eager"
-                  decoding="async"
-                  fetchpriority="high"
-                />
-              </div>
-            </div>
+            <!-- Panel visual decorativo (solo CSS, sin texto) -->
+            
           </div>
         </div>
       </section>
 
       <!-- ============================================================
-           VALORES
+           ACCESO PROVEEDORES — enlace a facturación / contacto
       ============================================================ -->
-      <section
-        class="section section--dark emp-valores"
-        id="valores"
-        aria-labelledby="valores-title"
-      >
+      <section class="sw-provider" aria-labelledby="sw-provider-title">
         <div class="u-container">
-          <div class="section__header--center reveal">
-            <span
-              class="section-label"
-              style="color: var(--color-primary-light)"
-              >COMUNICATE CON NOSOTROS</span
-            >
-            <h2
-              class="section__title"
-              id="valores-title"
-              style="color: var(--color-white)"
-            >
-              LUNES A VIERNES:<br />De 6:00 a 20:00 horas
+<br><br><br><br>
+          <div class="sw-provider__block">
+            <h2 class="sw-provider__title" id="sw-provider-title">
+              Estimado proveedor para presentar sus facturas<br>
+              acceda al siguiente enlace
             </h2>
+            <a href="#" class="sw-provider__btn">Aquí</a>
+          </div>
+              <br><br>
+         <div class="sw-provider__block">
+            <h2 class="sw-provider__title" id="sw-provider-title">
+              Si no tenés usuario/contraseña o tenés problemas de acceso: Comunicate con nosotros
+            </h2>
+            <a href="#" class="sw-provider__btn">Contactate</a>
           </div>
 
-          <div class="emp-valores__grid">
-            <!-- Valor 1 -->
-            <div class="emp-valor reveal reveal--delay-1">
-              <div class="emp-valor__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                </svg>
-              </div>
-              <h3 class="emp-valor__title">Telefono</h3>
-              <p class="emp-valor__desc">+54 (0362) 441 9300</p>
-            </div>
-
-            <!-- Valor 4 -->
-            <div class="emp-valor reveal reveal--delay-4">
-              <div class="emp-valor__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-              </div>
-              <h3 class="emp-valor__title">CHATBOT</h3>
-              <p class="emp-valor__desc">+54 (0362) 479 1478</p>
-            </div>
-
-            <!-- Valor 2 -->
-            <div class="emp-valor reveal reveal--delay-2">
-              <div class="emp-valor__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polygon
-                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                  />
-                </svg>
-              </div>
-              <h3 class="emp-valor__title">Email</h3>
-              <p class="emp-valor__desc">proveedores@ecom.com.ar</p>
-            </div>
-
-            <!-- Valor 3 -->
-            <div class="emp-valor reveal reveal--delay-3">
-              <div class="emp-valor__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="23 4 23 10 17 10" />
-                  <polyline points="1 20 1 14 7 14" />
-                  <path
-                    d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
-                  />
-                </svg>
-              </div>
-              <h3 class="emp-valor__title">Ubicación</h3>
-              <p class="emp-valor__desc">Roque Saenz Peña 352/370</p>
-            </div>
-          </div>
         </div>
+        <br><br><br><br>
       </section>
 
       <!-- ============================================================
-           CTA FINAL
-      ============================================================ -->
-      <section class="section cta" aria-labelledby="cta-empresa-title">
-        <div class="u-container">
-          <div class="cta__inner reveal">
-            <span
-              class="section-label"
-              style="justify-content: center; margin-bottom: var(--space-5)"
-              >Trabajemos juntos</span
-            >
-            <h2 class="cta__title" id="cta-empresa-title">
-              ¿Querés ser parte del futuro digital del Chaco?
-            </h2>
-            <p class="cta__desc">
-              Contactá a nuestro equipo y descubrí cómo ECOM puede transformar
-              tu organización con tecnología de vanguardia.
-            </p>
-            <div class="cta__actions">
-              <a
-                href="index.html#formulario-contacto"
-                class="btn btn--primary btn--lg"
-              >
-                Contactanos
-                <svg
-                  class="btn__icon btn__icon--arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a href="index.html" class="btn btn--outline btn--lg"
-                >Volver al inicio</a
-              >
-            </div>
-          </div>
+     CONTACTO: Formulario "¿Querés saber más..."
+============================================================ -->
+<section class="sw-contact sw-contact--pink" aria-labelledby="sw-contact-title">
+  <div class="u-container">
+    <div class="sw-contact__header reveal">
+      <h2 class="sw-contact__title" id="sw-contact-title">
+        ¿Querés saber más de nuestros<br>productos y servicios?
+      </h2>
+      <p class="sw-contact__subtitle">
+        Contanos sobre las necesidades tecnológicas que tenés<br>
+        y nuestros especialistas te brindarán información personalizada.
+      </p>
+    </div>
+
+    <form class="sw-contact__form-wrap reveal" action="#" method="POST">
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-nombre">Nombre y Apellido</label>
+          <input type="text" id="cf-nombre" name="nombre" required>
         </div>
-      </section>
+        <div class="sw-contact__field">
+          <label for="cf-telefono">Teléfono</label>
+          <input type="tel" id="cf-telefono" name="telefono" required>
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-email">E-mail</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-direccion">Dirección</label>
+          <input type="text" id="cf-direccion" name="direccion">
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-localidad">Localidad</label>
+          <input type="text" id="cf-localidad" name="localidad">
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-producto">Producto/Servicio</label>
+          <select id="cf-producto" name="producto" required>
+            <option value="" selected disabled></option>
+            <option value="internet">Internet</option>
+            <option value="datacenter">Datacenter</option>
+            <option value="telecomunicaciones">Telecomunicaciones</option>
+            <option value="software">Software</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sw-contact__field sw-contact__field--full">
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="5"></textarea>
+      </div>
+
+      <div class="sw-contact__submit-wrap">
+        <button type="submit" class="sw-contact__submit">Solicitar información</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+     
+      
+
+     
+
+     
+      
+     
+      
+      
+
+      
+
     </main>
 
     <!-- ============================================================
@@ -458,98 +373,63 @@
     <footer class="footer" role="contentinfo">
       <div class="u-container">
         <div class="footer__grid">
+
           <div class="footer__brand">
-            <a href="index.html" class="nav__logo" aria-label="ECOM Tech">
-              <div class="nav__logo-mark" aria-hidden="true">
-                <img
-                  src="img/ECOM_logo.png"
-                  alt="ECOM Tecnología y Comunicaciones"
-                />
-              </div>
+            <a href="index.html" aria-label="ECOM Tecnología y Comunicaciones">
+              <img src="img/ecomsa.png" alt="ECOM Tecnología y Comunicaciones" class="footer__logo-img" />
             </a>
-            <p class="footer__brand-text">Ecom innova, conecta, transforma</p>
-            <nav class="footer__social" aria-label="Redes sociales">
-              <a href="#" class="footer__social-link" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path
-                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="footer__social-link" aria-label="Instagram">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <circle
-                    cx="17.5"
-                    cy="6.5"
-                    r="1"
-                    fill="currentColor"
-                    stroke="none"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="footer__social-link" aria-label="Twitter / X">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="footer__social-link" aria-label="YouTube">
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path
-                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
-                  />
-                  <polygon
-                    points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </nav>
-          </div>
-
-          <div>
-            <h3 class="footer__col-title">Soluciones</h3>
-            <ul class="footer__links">
-              <li><a href="#" class="footer__link">Ciberseguridad</a></li>
-              <li><a href="#" class="footer__link">Cloud</a></li>
-              <li>
-                <a href="#" class="footer__link">Inteligencia Artificial</a>
+            <p class="footer__col-title" style="margin-top: var(--space-7);">CONTACTO:</p>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 11.5 19.79 19.79 0 0 1 1.07 2.88 2 2 0 0 1 3.05 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"/></svg>
+                <a href="tel:+543624419300" class="footer__contact-link">+54 362 441-9300</a>
               </li>
-              <li><a href="#" class="footer__link">Analytics</a></li>
-              <li><a href="#" class="footer__link">APIs</a></li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                <a href="https://wa.me/5493624810854" class="footer__contact-link">+54 9 362 481-0854</a>
+              </li>
+              <li class="footer__contact-item">
+                <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                <a href="mailto:at.clientes@ecom.com.ar" class="footer__contact-link">at.clientes@ecom.com.ar</a>
+              </li>
+            </ul>
+            <div class="footer__divider"></div>
+            <p class="footer__address">
+              Lunes a Viernes - 6:00 a 20:00 hs<br>
+              Roque Sáenz Peña 352/370<br>
+              Resistencia - Chaco - Argentina
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <h3 class="footer__col-title">ACCESOS:</h3>
+            <ul class="footer__links">
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Clientes</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="proveedores.html" class="footer__link">Proveedores</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Personal de ECOM</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Retirados</a></li>
             </ul>
           </div>
 
-          <div>
-            <h3 class="footer__col-title">Empresa</h3>
+          <div class="footer__col">
+            <h3 class="footer__col-title">INFORMACIÓN:</h3>
             <ul class="footer__links">
-              <li><a href="empresa.html" class="footer__link">Acerca de</a></li>
-              <li><a href="#" class="footer__link">RSE</a></li>
-              <li><a href="#" class="footer__link">Acceso Interno</a></li>
-              <li><a href="#" class="footer__link">Acceso Externo</a></li>
-              <li><a href="#" class="footer__link">Acceso Retirados</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Planos FO</a></li>
+              <li class="footer__list-item"><span class="footer__list-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span><a href="#" class="footer__link">Cronograma</a></li>
             </ul>
           </div>
 
-          <div>
-            <h3 class="footer__col-title">Clientes</h3>
-            <ul class="footer__links">
-              <li><a href="#" class="footer__link">Proveedores</a></li>
-              <li><a href="#" class="footer__link">Planos FO</a></li>
-              <li><a href="#" class="footer__link">Cronograma</a></li>
-            </ul>
+          <div class="footer__col">
+            <h3 class="footer__col-title footer__col-title--social">Seguinos en redes sociales:</h3>
+            <nav class="footer__social footer__social--plain" aria-label="Redes sociales">
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" class="footer__social-link footer__social-link--plain" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg></a>
+            </nav>
+            <div class="footer__divider"></div>
           </div>
+
         </div>
 
         <div class="footer__bottom">
@@ -563,6 +443,15 @@
       </div>
     </footer>
 
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/5493624419300" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="whatsapp-fab__icon"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </a>
+
+    <!-- ============================================================
+         JAVASCRIPT
+    ============================================================ -->
+    <script src="js/software-canvas.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

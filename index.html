@@ -106,7 +106,7 @@
                 <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="clientes.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -131,7 +131,7 @@
                 <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="https://mesadeentradadigital.ecom.com.ar/procedure-types/oficio_judicial" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Oficios</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -204,7 +204,7 @@
           <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
-          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="clientes.html" class="nav__mobile-submenu-item">Clientes</a>
           <a href="proveedores.html" class="nav__mobile-submenu-item">Proveedores</a>
           <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
           <a href="#" class="nav__mobile-submenu-item">Retirados</a>
@@ -1470,6 +1470,70 @@
           <!-- /.contact__grid -->
         </div>
       </section> 
+      <section class="sw-contact rosa" aria-labelledby="sw-contact-title">
+  <div class="u-container">
+    <div class="sw-contact__header reveal">
+      <h2 class="sw-contact__title" id="sw-contact-title">
+        ¿Querés saber más de nuestros<br>productos y servicios?
+      </h2>
+      <p class="sw-contact__subtitle">
+        Contanos sobre las necesidades tecnológicas que tenés<br>
+        y nuestros especialistas te brindarán información personalizada.
+      </p>
+    </div>
+
+    <form class="sw-contact__form-wrap reveal" action="#" method="POST">
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-nombre">Nombre y Apellido</label>
+          <input type="text" id="cf-nombre" name="nombre" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-telefono">Teléfono</label>
+          <input type="tel" id="cf-telefono" name="telefono" required>
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-email">E-mail</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-direccion">Dirección</label>
+          <input type="text" id="cf-direccion" name="direccion">
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-localidad">Localidad</label>
+          <input type="text" id="cf-localidad" name="localidad">
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-producto">Producto/Servicio</label>
+          <select id="cf-producto" name="producto" required>
+            <option value="" selected disabled></option>
+            <option value="internet">Internet</option>
+            <option value="datacenter">Datacenter</option>
+            <option value="telecomunicaciones">Telecomunicaciones</option>
+            <option value="software">Software</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sw-contact__field sw-contact__field--full">
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="5"></textarea>
+      </div>
+
+      <div class="sw-contact__submit-wrap">
+        <button type="submit" class="sw-contact__submit">Solicitar información</button>
+      </div>
+    </form>
+  </div>
+</section>
      
     </main>
 

@@ -32,6 +32,15 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+     <style>
+      .section__header--center {
+    max-width: 1640px;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: var(--space-16);
+}
+      /* Estilos específicos para esta página */
+      </style>
   </head>
 
   <body>
@@ -113,11 +122,11 @@
                 <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="clientes.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="proveedores.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Proveedores</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -208,7 +217,7 @@
           <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
-          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="clientes.html" class="nav__mobile-submenu-item">Clientes</a>
           <a href="proveedores.html" class="nav__mobile-submenu-item">Proveedores</a>
           <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
           <a href="#" class="nav__mobile-submenu-item">Retirados</a>
@@ -230,74 +239,30 @@
 
     <main id="empresa-inicio">
       <!-- ============================================================
-           HERO — Somos ECOM
+           HERO — Animación canvas + texto de la imagen de referencia
       ============================================================ -->
-      <section class="emp-hero" aria-labelledby="emp-hero-title">
-        <!-- Fondo oscuro con blobs (mismo sistema que el home) -->
-        <div class="emp-hero__bg" aria-hidden="true">
-          <div class="emp-hero__grid"></div>
-          <div class="emp-hero__blob emp-hero__blob--1"></div>
-          <div class="emp-hero__blob emp-hero__blob--2"></div>
-        </div>
+      <section class="sw-hero" aria-labelledby="sw-hero-title">
+        <!-- Canvas: solo objetos animados, sin texto -->
+        <canvas id="sw-canvas" class="sw-hero__canvas" aria-hidden="true"></canvas>
+        <div class="sw-hero__overlay" aria-hidden="true"></div>
 
         <div class="u-container">
-          <div class="emp-hero__inner">
+          <div class="sw-hero__inner">
             <!-- Texto -->
-            <div class="emp-hero__content">
-              <div class="hero__eyebrow">
-                <span class="hero__eyebrow-dot" aria-hidden="true"></span>
-                Más de 45 años de trayectoria
-              </div>
-
-              <h1 class="emp-hero__title" id="emp-hero-title">
-                Somos<br />
-                <span class="hero__title-accent">ECOM</span>
+            <div class="sw-hero__content">
+             
+                <span class="idi-hero-slide__eyebrow">SOMOS ECOM</span>
+              <h1 class="sw-hero__title" id="sw-hero-title">
+                <span class="sw-hero__title-accent">El motor tecnológico <br>que transforma el Chaco<br> y la región.</span>
               </h1>
+              <p>Creamos soluciones tecnológicas integrales: desarrollamos sistemas a medida, <br>conectamos comunidades y construimos la infraestructura del mañana. <br>Un compromiso firme con un progreso real, sostenible y con igualdad de oportunidades.</p>
+             
 
-              <p class="emp-hero__subtitle">
-                Desde hace más de 45 años transformamos realidades a través de
-                soluciones tecnológicas integrales que permiten brindar
-                oportunidades de vanguardia para la construcción de un futuro
-                mejor.
-              </p>
-
-              <div class="hero__actions">
-                <a href="#mision" class="btn btn--primary btn--lg">
-                  Conocer más
-                  <svg
-                    class="btn__icon btn__icon--arrow"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
-                <a href="index.html#contacto" class="btn btn--outline btn--lg"
-                  >Contacto</a
-                >
-              </div>
+              
             </div>
 
-            <!-- Imagen institucional -->
-            <div class="emp-hero__visual">
-              <div class="emp-hero__img-wrap">
-                <img
-                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Equipo de ECOM Chaco trabajando en instalaciones tecnológicas"
-                  class="emp-hero__img"
-                  width="600"
-                  height="480"
-                  loading="eager"
-                  decoding="async"
-                  fetchpriority="high"
-                />
-              </div>
-            </div>
+            <!-- Panel visual decorativo (solo CSS, sin texto) -->
+            
           </div>
         </div>
       </section>
@@ -317,50 +282,21 @@
           <div class="emp-mv__grid">
             <!-- Misión -->
             <div class="emp-mv__card reveal reveal--delay-1">
-              <div class="emp-mv__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10" />
-                  <circle cx="12" cy="12" r="4" />
-                  <line x1="12" y1="2" x2="12" y2="6" />
-                  <line x1="12" y1="18" x2="12" y2="22" />
-                  <line x1="2" y1="12" x2="6" y2="12" />
-                  <line x1="18" y1="12" x2="22" y2="12" />
-                </svg>
-              </div>
+              
               <h3 class="emp-mv__label">Misión</h3>
               <p class="emp-mv__text">
-                Brindar a nuestros clientes soluciones tecnológicas integrales,
-                garantizando sustentabilidad y calidad de servicio.
+                Impulsar la transformación digital a través de soluciones tecnológicas de vanguardia, 
+                garantizando conectividad de máximo alcance, eficiencia y calidad de servicio para el desarrollo de la región.
               </p>
             </div>
 
             <!-- Visión -->
             <div class="emp-mv__card reveal reveal--delay-2">
-              <div class="emp-mv__icon" aria-hidden="true">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
-                  <circle cx="12" cy="12" r="3" />
-                </svg>
-              </div>
+              
               <h3 class="emp-mv__label">Visión</h3>
               <p class="emp-mv__text">
-                Consolidar las relaciones con nuestros clientes implementando
-                prácticas socialmente responsables, proyectando nuestro
-                liderazgo a nivel nacional e internacional.
+                Consolidar a ECOM como el socio tecnológico de referencia en el norte argentino, 
+                liderando proyectos de innovación con impacto social y transparencia.
               </p>
             </div>
           </div>
@@ -377,23 +313,20 @@
       >
         <div class="u-container">
           <div class="section__header--center reveal">
-            <span
-              class="section-label"
-              >Nuestros valores</span
-            >
+           
             <h2
               class="section__title"
               id="valores-title"
               style="color: var(--color-white)"
             >
-              Los principios que<br />guían nuestra gestión
+             Nuestros Valores
             </h2>
           </div>
 
           <div class="emp-valores__grid">
             <!-- Valor 1 -->
             <div class="emp-valor reveal reveal--delay-1">
-              <div class="emp-valor__number" aria-hidden="true">01</div>
+              
               <div class="emp-valor__icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -403,22 +336,18 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                  <circle cx="9" cy="7" r="4" />
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  
                 </svg>
               </div>
-              <h3 class="emp-valor__title">Compromiso con el cliente</h3>
+              <h3 class="emp-valor__title">Compromiso con el impacto</h3>
               <p class="emp-valor__desc">
-                Trabajamos en función de sus necesidades para brindar un
-                servicio eficaz.
+                Nuestros clientes y la comunidad están en el centro. Diseñamos soluciones eficaces respondiendo con agilidad a sus desafíos reales.
               </p>
             </div>
 
             <!-- Valor 2 -->
             <div class="emp-valor reveal reveal--delay-2">
-              <div class="emp-valor__number" aria-hidden="true">02</div>
+              
               <div class="emp-valor__icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -428,22 +357,19 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <polygon
-                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                  />
+                  
                 </svg>
               </div>
-              <h3 class="emp-valor__title">Cultura de trabajo en equipo</h3>
+              <h3 class="emp-valor__title">Innovación y Evolución</h3>
               <p class="emp-valor__desc">
-                Contamos con un grupo humano profesional donde prima la
-                colaboración, el diálogo, la conducta ética, la experiencia, la
-                capacidad y la vocación de servicio.
+                Contamos con un grupo humano profesional donde prima la colaboración, 
+                el diálogo, la conducta ética, la experiencia, la capacidad y la vocación de servicio.
               </p>
             </div>
 
             <!-- Valor 3 -->
             <div class="emp-valor reveal reveal--delay-3">
-              <div class="emp-valor__number" aria-hidden="true">03</div>
+              
               <div class="emp-valor__icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -453,25 +379,19 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <polyline points="23 4 23 10 17 10" />
-                  <polyline points="1 20 1 14 7 14" />
-                  <path
-                    d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
-                  />
+                  
                 </svg>
               </div>
-              <h3 class="emp-valor__title">Mejora continua</h3>
+              <h3 class="emp-valor__title">Sinergia y Capacidad Humana</h3>
               <p class="emp-valor__desc">
-                Con el desafío de la innovación y eficiencia tecnológica,
-                buscamos potenciar nuestros productos, servicios, procesos,
-                habilidades y conocimientos, escuchando a nuestros clientes,
-                socios y pares tecnológicos.
+               Creemos en el talento local. Consolidamos un equipo profesional donde la ética, 
+               el diálogo colaborativo y la vocación de servicio marcan la diferencia.
               </p>
             </div>
 
             <!-- Valor 4 -->
             <div class="emp-valor reveal reveal--delay-4">
-              <div class="emp-valor__number" aria-hidden="true">04</div>
+             
               <div class="emp-valor__icon" aria-hidden="true">
                 <svg
                   viewBox="0 0 24 24"
@@ -481,14 +401,13 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                 
                 </svg>
               </div>
-              <h3 class="emp-valor__title">Responsabilidad social</h3>
+              <h3 class="emp-valor__title">Desarrollo Sostenible</h3>
               <p class="emp-valor__desc">
-                Nuestra empresa tiene un fuerte compromiso con la educación, la
-                ética en la gestión, el valor de las personas, el cuidado del
-                medio ambiente y el desarrollo de la comunidad.
+                Tecnología con propósito. Gestionamos con responsabilidad social, 
+                impulsando la educación digital, el cuidado ambiental y el crecimiento de nuestra comunidad.
               </p>
             </div>
           </div>
@@ -601,47 +520,7 @@
       <!-- ============================================================
            CTA FINAL
       ============================================================ -->
-      <section class="section cta" aria-labelledby="cta-empresa-title">
-        <div class="u-container">
-          <div class="cta__inner reveal">
-            <span
-              class="section-label"
-              style="justify-content: center; margin-bottom: var(--space-5)"
-              >Trabajemos juntos</span
-            >
-            <h2 class="cta__title" id="cta-empresa-title">
-              ¿Querés ser parte del futuro digital del Chaco?
-            </h2>
-            <p class="cta__desc">
-              Contactá a nuestro equipo y descubrí cómo ECOM puede transformar
-              tu organización con tecnología de vanguardia.
-            </p>
-            <div class="cta__actions">
-              <a
-                href="index.html#formulario-contacto"
-                class="btn btn--primary btn--lg"
-              >
-                Contactanos
-                <svg
-                  class="btn__icon btn__icon--arrow"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-              <a href="index.html" class="btn btn--outline btn--lg"
-                >Volver al inicio</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <!-- ============================================================

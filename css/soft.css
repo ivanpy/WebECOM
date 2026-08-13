@@ -179,7 +179,7 @@
 
 .sw-hero__title {
   font-family: var(--font-display);
-  font-size: clamp(var(--text-5xl), 8vw, var(--text-7xl));
+  font-size: 46px;
   font-weight: var(--font-extrabold);
   line-height: var(--leading-tight);
   color: var(--color-white);
