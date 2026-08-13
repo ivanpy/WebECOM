@@ -58,7 +58,7 @@
 .sw-contact__field textarea {
   background: var(--color-white);
   border: none;
-  border-radius: var(--radius-md, 6px);
+  
   padding: var(--space-3) var(--space-4);
   font-size: var(--text-base);
   font-family: inherit;

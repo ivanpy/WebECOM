@@ -4587,3 +4587,194 @@ h6 {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0; }
 }
+
+
+
+
+
+/* Estilos generales de la sección */
+.soluciones-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Título */
+.soluciones-title {
+  color: #0d325c; /* Azul oscuro matching */
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de la lista de soluciones */
+.soluciones-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* Permite adaptarse mejor a pantallas más pequeñas */
+}
+
+/* Tarjeta individual (Enlace) */
+.solucion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  width: 130px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Efecto hover suave al pasar el cursor sobre la opción */
+.solucion-item:hover {
+  transform: translateY(-5px);
+  opacity: 0.9;
+}
+
+/* Estilo para las imágenes SVG */
+.solucion-item img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+/* Estilo para los textos */
+.solucion-item span {
+  color: #0d325c;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+* ============================================================
+   CONTACTO: Formulario "¿Querés saber más..."
+============================================================ */
+.sw-contact.sw-contact--pink {
+  background: var(--color-primary);
+  padding-block: var(--space-16);
+}
+
+.sw-contact__header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto var(--space-10);
+}
+
+.sw-contact__title {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+  font-weight: var(--font-extrabold);
+  color: var(--color-white);
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+}
+
+.sw-contact__subtitle {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.5;
+}
+
+.sw-contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-5);
+}
+
+.sw-contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sw-contact__field label {
+  color: var(--color-white);
+  font-size: var(--text-sm);
+  font-weight: var(--font-semibold);
+}
+
+.sw-contact__field input,
+.sw-contact__field select,
+.sw-contact__field textarea {
+  background: var(--color-white);
+  border: none;
+  
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base);
+  font-family: inherit;
+  color: var(--color-dark);
+}
+
+.sw-contact__field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300203a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-4) center;
+  background-size: 16px;
+  padding-right: var(--space-10);
+  cursor: pointer;
+}
+
+.sw-contact__field input:focus,
+.sw-contact__field select:focus,
+.sw-contact__field textarea:focus {
+  outline: 2px solid var(--color-dark);
+  outline-offset: 2px;
+}
+
+.sw-contact__field--full {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+}
+
+.sw-contact__field--full textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.sw-contact__submit-wrap {
+  text-align: center;
+}
+
+.sw-contact__submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-dark);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-md, 6px);
+  padding: var(--space-3) var(--space-8);
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  cursor: pointer;
+  transition: background var(--transition-fast, 0.2s ease), transform var(--transition-fast, 0.2s ease);
+}
+
+.sw-contact__submit:hover {
+  background: var(--color-dark-2);
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .sw-contact__row {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+.rosa {
+    background-color: #e6237a;
+    
+}

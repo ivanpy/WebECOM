@@ -181,8 +181,9 @@
 /* Adaptación responsive */
 @media (max-width: 768px) {
   .idi-hero-slide {
-    height: auto;
+    height: 70vh;
     min-height: 460px;
+    max-height: 600px;
     padding: 80px 0 40px;
   }
 
@@ -282,11 +283,11 @@
                 <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
               </button>
               <div class="nav__dropdown" role="menu" aria-labelledby="dropdown-accesos">
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="clientes.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Clientes</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
-                <a href="#" class="nav__dropdown-item" role="menuitem">
+                <a href="proveedores.html" class="nav__dropdown-item" role="menuitem">
                   <span class="nav__dropdown-item-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
                   <span class="nav__dropdown-item-content"><span class="nav__dropdown-item-label">Proveedores</span><span class="nav__dropdown-item-line"></span></span>
                 </a>
@@ -377,7 +378,7 @@
           <svg class="nav__dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
         </button>
         <div class="nav__mobile-submenu" id="mobile-accesos" aria-hidden="true">
-          <a href="#" class="nav__mobile-submenu-item">Clientes</a>
+          <a href="clientes.html" class="nav__mobile-submenu-item">Clientes</a>
           <a href="proveedores.html" class="nav__mobile-submenu-item">Proveedores</a>
           <a href="#" class="nav__mobile-submenu-item">Personal de ECOM</a>
           <a href="#" class="nav__mobile-submenu-item">Retirados</a>
@@ -427,32 +428,14 @@ merece la misma oportunidad de estar conectado</p>
     </div>
 
     <!-- SLIDE 2 (Nueva imagen de ejemplo) -->
-    <div class="idi-slide">
-      <div class="idi-hero-slide__bg">
-        <img src="img/cards/inter1.png" alt="I+D+i" class="idi-hero-slide__img" />
-        <div class="idi-hero-slide__overlay"></div>
-      </div>
-      <div class="u-container idi-hero-slide__container">
-        <div class="idi-hero-slide__content">
-          <span class="idi-hero-slide__eyebrow">INTERNET SATELITAL</span>
-          <h1 class="idi-hero-slide__title">Cobertura total, con tecnología demáximo alcance.</h1>
-          <p class="idi-hero-slide__desc">Internet satelital de alta velocidad para parajes,
-zonas rurales, vehículos y áreas remotas.
-Porque cada persona, sin importar dónde esté,
-merece la misma oportunidad de estar conectado</p>
-          <div class="idi-hero-slide__actions">
-            <a href="#mision" class="idi-hero-slide__btn">Conocé más</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Agregá más <div class="idi-slide">...</div> según las imágenes que necesites -->
 
   </div>
 
   <!-- Puntos de navegación (Se pueden generar manualmente o con JS) -->
-  <div class="idi-hero-slide__dots" id="idi-dots-container"></div>
+  
 </section>
 
       <!-- ============================================================
@@ -514,7 +497,7 @@ merece la misma oportunidad de estar conectado</p>
         <p class="internet-service__card-text">
           <span class="internet-service__highlight">Empresas, galpones, estancias</span> y ubicaciones donde se requiera conectividad y se disponga de electricidad.
         </p>
-        <a href="#" class="internet-service__btn">Contratá</a>
+        <a href="contact.html" class="internet-service__btn">Contratá</a>
       </div>
 
       <!-- Servicio Itinerante -->
@@ -531,7 +514,7 @@ merece la misma oportunidad de estar conectado</p>
         <p class="internet-service__card-text">
           <span class="internet-service__highlight">Colectivos, aviones, embarcaciones,</span> permitiendo la conectividad durante su desplazamiento.
         </p>
-        <a href="#" class="internet-service__btn">Contratá</a>
+        <a href="contact.html" class="internet-service__btn">Contratá</a>
       </div>
 
     </div>
@@ -605,6 +588,108 @@ merece la misma oportunidad de estar conectado</p>
 
       
       
+      <section class="soluciones-container">
+  <h2 class="soluciones-title">Soluciones</h2>
+  
+  <div class="soluciones-grid">
+    <a href="telecomunicaciones.html" class="solucion-item">
+      <img src="img/tele.svg" alt="Telecomunicaciones">
+      <span>Telecomunicaciones</span>
+    </a>
+
+    <a href="internet.html" class="solucion-item">
+      <img src="img/inter.svg" alt="Internet Satelital">
+      <span>Internet<br>Satelital</span>
+    </a>
+
+    <a href="software.html" class="solucion-item">
+      <img src="img/soft.svg" alt="Software">
+      <span>Software</span>
+    </a>
+
+    <a href="datacenter.html" class="solucion-item">
+      <img src="img/datra.svg" alt="Datacenter">
+      <span>Datacenter</span>
+    </a>
+
+    <a href="seguridad.html" class="solucion-item">
+      <img src="img/segu.svg" alt="Seguridad">
+      <span>Seguridad</span>
+    </a>
+
+    <a href="idi.html" class="solucion-item">
+      <img src="img/idi.svg" alt="I+D+i">
+      <span>I+D+i</span>
+    </a>
+  </div>
+</section>
+ <!-- ============================================================
+     CONTACTO: Formulario "¿Querés saber más..."
+============================================================ -->
+<section class="sw-contact rosa" aria-labelledby="sw-contact-title">
+  <div class="u-container">
+    <div class="sw-contact__header reveal">
+      <h2 class="sw-contact__title" id="sw-contact-title">
+        ¿Querés saber más de nuestros<br>productos y servicios?
+      </h2>
+      <p class="sw-contact__subtitle">
+        Contanos sobre las necesidades tecnológicas que tenés<br>
+        y nuestros especialistas te brindarán información personalizada.
+      </p>
+    </div>
+
+    <form class="sw-contact__form-wrap reveal" action="#" method="POST">
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-nombre">Nombre y Apellido</label>
+          <input type="text" id="cf-nombre" name="nombre" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-telefono">Teléfono</label>
+          <input type="tel" id="cf-telefono" name="telefono" required>
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-email">E-mail</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-direccion">Dirección</label>
+          <input type="text" id="cf-direccion" name="direccion">
+        </div>
+      </div>
+
+      <div class="sw-contact__row">
+        <div class="sw-contact__field">
+          <label for="cf-localidad">Localidad</label>
+          <input type="text" id="cf-localidad" name="localidad">
+        </div>
+        <div class="sw-contact__field">
+          <label for="cf-producto">Producto/Servicio</label>
+          <select id="cf-producto" name="producto" required>
+            <option value="" selected disabled></option>
+            <option value="internet">Internet</option>
+            <option value="datacenter">Datacenter</option>
+            <option value="telecomunicaciones">Telecomunicaciones</option>
+            <option value="software">Software</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="sw-contact__field sw-contact__field--full">
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" rows="5"></textarea>
+      </div>
+
+      <div class="sw-contact__submit-wrap">
+        <button type="submit" class="sw-contact__submit">Solicitar información</button>
+      </div>
+    </form>
+  </div>
+</section>
 
       <!-- ============================================================
            CTA FINAL
