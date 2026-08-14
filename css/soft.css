@@ -117,7 +117,7 @@
 }
 .so-hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 520px;
   display: flex;
   align-items: center;
   background: linear-gradient(
@@ -551,6 +551,18 @@
   color: var(--color-dark-3);
 }
 
+/* Footer "Próximamente" para cards de desarrollo en curso */
+.so-card__footer {
+  margin: auto calc(-1 * var(--space-6)) calc(-1 * var(--space-6));
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-dark);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: var(--font-bold);
+  font-size: var(--text-sm);
+  letter-spacing: 0.02em;
+}
+
 /* ── BANNER INNOVACIÓN ──────────────────────────────────────── */
 .so-banner {
   position: relative;
@@ -829,7 +841,7 @@
 .dev-card__title {
   font-family: var(--font-display);
   font-weight: var(--font-extrabold);
-  font-size: var(--text-lg);
+  font-size: 26px;
   color: var(--color-dark);
   line-height: var(--leading-snug);
 }
