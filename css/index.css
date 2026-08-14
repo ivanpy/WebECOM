@@ -1,0 +1,186 @@
+
+  .idi-hero-slide {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    height: 80vh;
+    max-height: 700px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: 'Urbanist', sans-serif;
+  }
+
+  /* Fondo e imagen con tinte */
+  .idi-hero-slide__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .idi-hero-slide__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.9;
+  }
+
+  .idi-hero-slide__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+  transition: background-color 0.3s ease;
+}
+
+/* Opción 1: Rosa (#EC268F) */
+.idi-hero-slide__overlay--pink {
+  background-color: #EC268F;
+}
+
+/* Opción 2: Azul (#0c6788) */
+.idi-hero-slide__overlay--blue {
+  background-color: #0c6788;
+}
+
+  /* Contenedor y diseño del contenido */
+  .idi-hero-slide__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .idi-hero-slide__content {
+    max-width: 540px;
+  }
+
+  /* Etiqueta / Eyebrow */
+  .idi-hero-slide__eyebrow {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  /* Título */
+  .idi-hero-slide__title {
+    font-size: 46px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  /* Texto de descripción */
+  .idi-hero-slide__desc {
+    font-size: 15px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 28px;
+    font-weight: 400;
+    max-width: 480px;
+  }
+
+  /* Botón */
+  .idi-hero-slide__btn {
+    display: inline-block;
+    background-color: #180c5e;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(230, 35, 122, 0.3);
+  }
+
+  .idi-hero-slide__btn:hover {
+    background-color: #23137c;
+    transform: translateY(-1px);
+  }
+   .idi-hero-slide__btnrosa {
+    display: inline-block;
+    background-color: #b21b6e;
+    color: #ffffff;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(230, 35, 122, 0.3);
+  }
+
+  /* Puntos de navegación del carrusel */
+  .idi-hero-slide__dots {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 3;
+  }
+
+  .idi-hero-slide__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .idi-hero-slide__dot--active {
+    background-color: #e6237a;
+    transform: scale(1.25);
+  }
+
+  /* Ocultar/mostrar slides activos */
+  .idi-hero-slide-item {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .idi-hero-slide-item.is-active {
+    display: block;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .idi-hero-slide {
+      height: 70vh;
+      min-height: 460px;
+      max-height: 600px;
+      padding: 80px 0 40px;
+    }
+
+    .idi-hero-slide__title {
+      font-size: 26px;
+    }
+
+    .idi-hero-slide__desc {
+      font-size: 14px;
+    }
+  }
