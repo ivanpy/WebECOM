@@ -6,7 +6,7 @@
 /* ── HERO ─────────────────────────────────────────────────── */
 .sw-hero {
   position: relative;
-  min-height: 88vh;
+  min-height: 520px;
   display: flex;
   align-items: center;
   background: linear-gradient(145deg, var(--color-dark) 0%, var(--color-dark-3) 100%);
@@ -567,3 +567,45 @@
 .reveal--delay-2 { transition-delay: 0.20s; }
 .reveal--delay-3 { transition-delay: 0.30s; }
 .reveal--delay-4 { transition-delay: 0.40s; }
+.internet-plans {
+  background-color: #eef2f7;
+  padding-block: 56px;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.internet-plans__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.internet-plans__card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.internet-plans__card-title {
+  color: #183e68;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.internet-plans__underline {
+  display: block;
+  width: 36px;
+  height: 3px;
+  background-color: #e6237a;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.internet-plans__card-text {
+  color: #183e68;
+  font-size: 18px;
+  line-height: 1.5;
+}

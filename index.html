@@ -22,6 +22,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -228,194 +229,146 @@
        HERO
   ============================================================ -->
     <main id="inicio">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero__bg" aria-hidden="true">
-          <!-- Animación JS de fondo: red de nodos + código flotante -->
-          <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
-          <!-- Overlay oscuro para legibilidad del texto -->
-          <div class="hero__canvas-overlay"></div>
-          <div class="hero__grid"></div>
-          <div class="hero__bg-blob hero__bg-blob--1"></div>
-          <div class="hero__bg-blob hero__bg-blob--2"></div>
-          <div class="hero__bg-blob hero__bg-blob--3"></div>
-        </div>
+      <!-- ============================================================
+   HERO CAROUSEL
+============================================================ -->
+<section class="idi-hero-slide" id="hero-carousel" aria-label="Carrusel Principal">
+  
+  <!-- Slide 1 -->
+  <div class="idi-hero-slide-item is-active" data-index="0">
+    <div class="idi-hero-slide__bg">
+      <img src="img/EMPRESA.jpg" alt="Telecomunicaciones" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--pink"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <h1 class="idi-hero-slide__title">Impulsamos el futuro digital de nuestra región.</h1>
+        <p class="idi-hero-slide__desc">
+          Transformamos tecnología en soluciones reales para conectar personas, optimizar gestiones y potenciar el mañana
+        </p>
+        <a href="contact.html" class="idi-hero-slide__btn">Conocé más</a>
+      </div>
+    </div>
+    
+  </div>
 
-        <div class="u-container">
-          <div class="hero__inner">
-            <!-- Content -->
-            <div class="hero__content">
-              <!-- Slides de texto — rotan automáticamente sin controles -->
-              <div class="hero__slides" id="hero-slides" aria-live="polite">
+  <!-- Slide 2 -->
+  <div class="idi-hero-slide-item" data-index="1">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/TELECOMUNICACIONES.jpg" alt="Internet Satelital" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--pink"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">TELECOMUNICACIONES</span>
+        <h2 class="idi-hero-slide__title">El pulso digital que mantiene Nuestros Clientes a la región en movimiento.</h2>
+        <p class="idi-hero-slide__desc">
+          Unimos distancias con una red de fibra óptica robusta y confiable, garantizando que cada dato llegue a su destino con velocidad y precisión.
+        </p>
+        <a href="telecomunicaciones.html" class="idi-hero-slide__btn">Conocé más</a>
+      </div>
+    </div>
+  </div>
 
-                <!-- Slide 1 — sin eyebrow -->
-                <div class="hero__slide is-active" role="group" aria-label="Slide 1 de 7">
-                  <h1 class="hero__title" id="hero-title">
-                    Impulsamos el futuro digital
-                    <span class="hero__title-accent">de nuestra región.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Transformamos tecnología en soluciones reales para conectar personas,
-                    optimizar gestiones y potenciar el mañana.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
+  <!-- Slide 3 -->
+  <div class="idi-hero-slide-item" data-index="2">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/INTERNETSATELITAL.jpg" alt="Software y Soluciones" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--blue"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">INTERNET SATELITAL</span>
+        <h2 class="idi-hero-slide__title">Cobertura total, con tecnología de máximo alcance.</h2>
+        <p class="idi-hero-slide__desc">
+          Internet satelital de alta velocidad para parajes, zonas rurales, vehículos y áreas remotas. Porque cada persona, sin importar dónde esté, merece la misma oportunidad de estar conectado.
+        </p>
+        <a href="internet.html" class="idi-hero-slide__btnrosa">Conocé más</a>
+      </div>
+    </div>
+  </div>
+  <!-- Slide 4 -->
+  <div class="idi-hero-slide-item" data-index="1">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/SOFTWARE.jpg" alt="Internet Satelital" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--pink"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">SOFTWARE</span>
+        <h2 class="idi-hero-slide__title">Creamos herramientas inteligentes para decisiones estratégicas.</h2>
+        <p class="idi-hero-slide__desc">
+         Desarrollamos soluciones digitales a medida, que optimizan la gestión pública y potencian la rentabilidad mediante la automatización.
+        </p>
+        <a href="software.html" class="idi-hero-slide__btn">Conocé más</a>
+      </div>
+    </div>
+  </div>
+  <!-- Slide 5 -->
+  <div class="idi-hero-slide-item" data-index="2">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/DATACENTER.jpg" alt="Software y Soluciones" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--blue"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">DATACENTER</span>
+        <h2 class="idi-hero-slide__title">Soberanía, respaldo y potencia para sus Nuestros Clientes proyectos a escala global.</h2>
+        <p class="idi-hero-slide__desc">
+          Aloje su infraestructura en el corazón tecnológico de la región, con soporte experto local y disponibilidad garantizada las 24 horas.
+        </p>
+        <a href="datacenter.html" class="idi-hero-slide__btnrosa">Conocé más</a>
+      </div>
+    </div>
+  </div>
+<!-- Slide 6 -->
+  <div class="idi-hero-slide-item" data-index="1">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/SEGURIDAD.jpg" alt="Internet Satelital" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--pink"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">SEGURIDAD</span>
+        <h2 class="idi-hero-slide__title">Blindamos su activo más valioso: la información.</h2>
+        <p class="idi-hero-slide__desc">
+         Protección avanzada y protocolos de misión crítica para garantizar la continuidad operativa y la confianza total en entornos digitales complejos.
+        </p>
+        <a href="seguridad.html" class="idi-hero-slide__btn">Conocé más</a>
+      </div>
+    </div>
+  </div>
+  <!-- Slide 7 -->
+  <div class="idi-hero-slide-item" data-index="2">
+    <div class="idi-hero-slide__bg">
+      <img src="img/cards/ID.jpg" alt="Software y Soluciones" class="idi-hero-slide__img" />
+      <div class="idi-hero-slide__overlay idi-hero-slide__overlay--blue"></div>
+    </div>
+    <div class="u-container idi-hero-slide__container">
+      <div class="idi-hero-slide__content">
+        <span class="idi-hero-slide__eyebrow">I+D+i</span>
+        <h2 class="idi-hero-slide__title">Exploramos las fronteras tecnológicas para diseñar el futuro hoy.</h2>
+        <p class="idi-hero-slide__desc">
+         Impulsamos la adopción de Inteligencia Artificial, Smart Cities y nuevas tecnologías para transformar la calidad de vida y la eficiencia institucional.
+        </p>
+        <a href="idi.html" class="idi-hero-slide__btnrosa">Conocé más</a>
+      </div>
+    </div>
+  </div>
+  <!-- Puntos de navegación (Dots) -->
+  <div class="idi-hero-slide__dots" role="tablist">
+    <button class="idi-hero-slide__dot idi-hero-slide__dot--active" aria-label="Slide 1" data-slide="0"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 2" data-slide="1"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 3" data-slide="2"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 4" data-slide="2"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 5" data-slide="2"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 6" data-slide="2"></button>
+    <button class="idi-hero-slide__dot" aria-label="Slide 7" data-slide="2"></button>
+  </div>
 
-                <!-- Slide 2 — TELECOMUNICACIONES -->
-                <div class="hero__slide" role="group" aria-label="Slide 2 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    TELECOMUNICACIONES
-                  </div>
-                  <h1 class="hero__title">
-                    El pulso digital que mantiene
-                    <span class="hero__title-accent">a la región en movimiento.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Unimos distancias con una red de fibra óptica robusta y confiable,
-                    garantizando que cada dato llegue a su destino con velocidad y precisión.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Slide 3 — INTERNET SATELITAL -->
-                <div class="hero__slide" role="group" aria-label="Slide 3 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    INTERNET SATELITAL
-                  </div>
-                  <h1 class="hero__title">
-                    Cobertura total,
-                    <span class="hero__title-accent">con tecnología de máximo alcance.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Internet satelital de alta velocidad para parajes, zonas rurales,
-                    vehículos y áreas remotas. Porque cada persona, sin importar dónde
-                    esté, merece la misma oportunidad de estar conectado.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Slide 4 — SOFTWARE -->
-                <div class="hero__slide" role="group" aria-label="Slide 4 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    SOFTWARE
-                  </div>
-                  <h1 class="hero__title">
-                    Creamos herramientas inteligentes para
-                    <span class="hero__title-accent">decisiones estratégicas.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Desarrollamos soluciones digitales a medida, que optimizan la gestión
-                    pública y potencian la rentabilidad mediante la automatización.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Slide 5 — DATACENTER -->
-                <div class="hero__slide" role="group" aria-label="Slide 5 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    DATACENTER
-                  </div>
-                  <h1 class="hero__title">
-                    Soberanía, respaldo y potencia para sus
-                    <span class="hero__title-accent">proyectos a escala global.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Aloje su infraestructura en el corazón tecnológico de la región,
-                    con soporte experto local y disponibilidad garantizada las 24 horas.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Slide 6 — SEGURIDAD -->
-                <div class="hero__slide" role="group" aria-label="Slide 6 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    SEGURIDAD
-                  </div>
-                  <h1 class="hero__title">
-                    Blindamos su activo más valioso:
-                    <span class="hero__title-accent">la información.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Protección avanzada y protocolos de misión crítica para garantizar
-                    la continuidad operativa y la confianza total en entornos digitales complejos.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Slide 7 — I+D+i -->
-                <div class="hero__slide" role="group" aria-label="Slide 7 de 7">
-                  <div class="hero__eyebrow" aria-hidden="true">
-                    <span class="hero__eyebrow-dot"></span>
-                    I+D+i
-                  </div>
-                  <h1 class="hero__title">
-                    Exploramos las fronteras tecnológicas para
-                    <span class="hero__title-accent">diseñar el futuro hoy.</span>
-                  </h1>
-                  <p class="hero__subtitle">
-                    Impulsamos la adopción de Inteligencia Artificial, Smart Cities y
-                    nuevas tecnologías para transformar la calidad de vida y la eficiencia institucional.
-                  </p>
-                  <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary btn--lg">
-                      Ver más
-                      <svg class="btn__icon btn__icon--arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-              <!-- /.hero__slides -->
-            </div>
-
-            <!-- Imagen hero -->
-            <div class="hero__visual" aria-hidden="true">
-              <div class="hero__img-wrap">
-                <img
-                  src="img/codder.png"
-                  alt="ilustracion-ecom"
-                  class="hero__img hero__img--static"
-                  draggable="false"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+</section>
+      
+      
 
       <!-- ============================================================
          STATS — fondo blanco
@@ -472,7 +425,7 @@
             <!-- ── Card 1 · TELECOMUNICACIONES ── -->
             <article class="eje-card eje-card--overlay-pink reveal reveal--delay-1" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/TELECOMUNICACIONES.jpg"
+                <img class="eje-card__img" src="img/home/1-TELECOMUNICACIONES-MODIFICADO.jpg"
                   alt="Telecomunicaciones ECOM — Conectividad y redes"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -493,7 +446,7 @@
             <!-- ── Card 2 · INTERNET SATELITAL ── -->
             <article class="eje-card eje-card--overlay-navy reveal reveal--delay-1" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/INTERNETSATELITAL.jpg"
+                <img class="eje-card__img" src="img/home/2-INTERNET SATELITAL.jpg"
                   alt="Internet Satelital ECOM — Conectividad sin fronteras"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -514,7 +467,7 @@
             <!-- ── Card 3 · SOFTWARE ── -->
             <article class="eje-card eje-card--overlay-pink reveal reveal--delay-3" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/SOFTWARE.jpg"
+                <img class="eje-card__img" src="img/home/3-SOFTWARE.jpg"
                   alt="Software ECOM — Ingeniería y transformación de procesos"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -535,7 +488,7 @@
             <!-- ── Card 4 · DATACENTER ── -->
             <article class="eje-card eje-card--overlay-navy reveal reveal--delay-1" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/DATACENTER.jpg"
+                <img class="eje-card__img" src="img/home/4-DATACENTER.png"
                   alt="Datacenter ECOM — Nube regional y soluciones"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -556,7 +509,7 @@
             <!-- ── Card 5 · SEGURIDAD ── -->
             <article class="eje-card eje-card--overlay-pink reveal reveal--delay-2" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/SEGURIDAD.jpg"
+                <img class="eje-card__img" src="img/home/6-SEGURIDAD.jpeg"
                   alt="Seguridad ECOM — Ciberseguridad e integridad de datos"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -577,7 +530,7 @@
             <!-- ── Card 6 · I+D+i ── -->
             <article class="eje-card eje-card--overlay-navy reveal reveal--delay-3" role="listitem">
               <a href="#" class="eje-card__img-wrap" tabindex="-1" aria-hidden="true">
-                <img class="eje-card__img" src="img/cards/ID.jpg"
+                <img class="eje-card__img" src="img/home/5-I+D+i.jpg"
                   alt="I+D+i ECOM — Hub de innovación"
                   width="600" height="900" loading="lazy" decoding="async" />
                 <div class="eje-card__overlay" aria-hidden="true"></div>
@@ -881,7 +834,7 @@
                 solución de Internet Satelital Móvil: conectividad ininterrumpida
                 que te acompaña a donde vayas.
               </p>
-              <a href="#" class="btn btn--primary btn--lg">
+              <a href="contact.html" class="btn btn--primary btn--lg">
                 Más información
                 <svg
                   class="btn__icon btn__icon--arrow"
@@ -1668,5 +1621,49 @@
     <script src="js/hero-canvas.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="js/hero-code-windows.js"></script> -->
+     <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.idi-hero-slide-item');
+    const dots = document.querySelectorAll('.idi-hero-slide__dot');
+    let currentIndex = 0;
+    const intervalTime = 5000; // Cambio automático cada 5 segundos
+    let slideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('idi-hero-slide__dot--active', i === index);
+      });
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      const nextIndex = (currentIndex + 1) % slides.length;
+      showSlide(nextIndex);
+    }
+
+    function startAutoSlide() {
+      slideInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    function resetAutoSlide() {
+      clearInterval(slideInterval);
+      startAutoSlide();
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        showSlide(index);
+        resetAutoSlide();
+      });
+    });
+
+    if (slides.length > 0) {
+      startAutoSlide();
+    }
+  });
+</script>
   </body>
 </html>
